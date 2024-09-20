@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123214826">2.00.00</Version>
+	<Version date="20230628225628">2.00.00</Version>
 	<Author></Author>
 	<Copyright></Copyright>
 	<Product id="TrackerUpdate"/>
 	<Language eName="Ukrainian (Ukraine)" lName="Українська" code="uk-UA" R2L="false"/>
-	<Module name="TrackerUpdate" namespace="" version="7.0.323.3"/>
+	<Module name="TrackerUpdate" namespace="" version="10.0.1.371"/>
 	<Strings>
 		<text id="setting.grBox.proxyConfig" h="A43FB5FD">Налаштувати Proxy для доступу в інтернет</text>
 		<text id="setting.radioBtn.noProxy" h="8293FBBF">Без proxy</text>
@@ -29,6 +29,7 @@
 		<text id="main.txtBox.availableUpdate" h="5B1B87D4">Доступні оновлення:</text>
 		<text id="main.msgBox.incompatibleWithMaintenancePart1" h="FFB21F9F">Вибрані оновлення не сумісні з наявним планом обслуговування. Бажаєте установити оновлення програм зараз?</text>
 		<text id="main.msgBox.incompatibleWithMaintenancePart2" h="97A2D5BB">** ПОПЕРЕДЖЕННЯ **  Вибравши "Так", Ви продовжите оновлення та отримаєте версію програми, яка буде працювати в режимі оцінки; вибравши "Ні", Ви збереже поточну версію.</text>
+		<text id="main.msgBox.lockedUpdatesPart1" h="EE39CB5E">Програми, які блокують перевірку наявності оновлень: %1</text>
 		<text id="main.msgBox.lockedUpdatesPart2" h="9DD22F03">Якщо бажаєте установити оновлення, будь ласка, видаліть ці програми.</text>
 		<text id="main.btn.setting" h="9147CD71">Налаштування</text>
 		<text id="main.btn.help" h="03718903">Допомога</text>
@@ -40,13 +41,13 @@
 		<text id="main.context.makeHidden" h="86B28783">Приховати</text>
 		<text id="main.context.makeVisible" h="C3CA8E89">Показати</text>
 		<text id="main.context.check" h="B50F4762">Перевірка вибраних</text>
-		<text id="main.ballon.autoStartDownloadTimer" h="2EB87226">Оновлення програм будуть автоматично завантажені за хвилину.</text>
+		<text id="main.ballon.autoStartDownloadTimer" h="A5CE8595">Оновлення програм будуть автоматично завантажені за хвилину.</text>
 		<text id="main.ballon.downloadingUpdates" h="DC6A6C81">Завантаження...</text>
 		<text id="main.ballon.installingUpdates" h="7DBFF5EC">Установка...</text>
-		<text id="main.ballon.autoStartInstallTimer" h="8DE069CA">Оновлення програм будуть автоматично установлені за хвилину.</text>
+		<text id="main.ballon.autoStartInstallTimer" h="60E5F0B1">Оновлення програм будуть автоматично установлені за хвилину.</text>
 		<text id="main.ballon.newUpdates" h="825EA76A">Оновлення доступні.</text>
 		<text id="main.ballon.updatesDownloaded" h="D9BE4C80">Оновлення завантажені.</text>
-		<text id="main.tooltip.maintenanceExpired" h="8CDDAEC6">План обслуговування для цього продукту недійсний.</text>
+		<text id="main.tooltip.maintenanceExpired" h="284EF471">Термін обслуговування для цього продукту закінчився</text>
 		<text id="main.tooltip.lockedItem" h="8DBDABA7">Оновлення заблоковане іншою програмою.</text>
 		<text id="state.msg.gatheringInformation" h="0348E22F">Збір інформації, зачекайте, будь ласка...</text>
 		<text id="state.msg.noAvailableUpdate" h="CEA582A0">Оновлень немає.</text>
@@ -55,13 +56,13 @@
 		<text id="state.msg.InternetConectionError" h="99D4EBF8">Неможливо під’єднатися. Спробуйте пізніше.</text>
 		<text id="state.msg.getDataFileError" h="C7A70F8D">Неможливо завантажити інформацію про програми.</text>
 		<text id="state.msg.selfUpdateError" h="D018D1C4">Помилка при автоматичному оновленні. Спробуйте ще раз пізніше.</text>
-		<text id="state.msg.disabledByGroupPilisy" h="066F184E">Поновалення програм відключеен Вашим системним адміністратором.</text>
+		<text id="state.msg.disabledByGroupPolicy" h="006DEFC3">Політика захисту у вашій організації забороняє використання TrackerUpdater.</text>
 		<text id="main.btn.download" h="BCE8145B">Завантажити</text>
 		<text id="main.btn.downloadWithTimer" h="DACCF32D">Завантажено (%1)</text>
 		<text id="main.listCol.name" h="D18643E3">Ім’я</text>
 		<text id="main.listCol.version" h="7922E696">Доступна</text>
 		<text id="main.listCol.installed" h="DECE7C42">Установлено</text>
-		<text id="main.state.warning" h="95988032">Жоден продукт Tracker не установлено.</text>
+		<text id="main.state.warning" h="AD6E3116">Жодного продукта Tracker не установлено.</text>
 		<text id="existing.dlg.name" h="C0C93CE4">Установлено програми</text>
 		<text id="existing.btn.close" h="9594DBB7">Закрити</text>
 		<text id="existing.listCol.name" h="D18643E3">Ім’я</text>
@@ -84,7 +85,7 @@
 		<text id="progress.txt.time.unknown" h="8566CB94">Невідомий</text>
 		<text id="progress.userMsg.connectToServer" h="179110BC">З’єднання з сервером %1...</text>
 		<text id="progress.userMsg.connectedSuccessfully" h="51738A9A">Пдіключення здійснено.</text>
-		<text id="progress.userMsg.gettingFile" h="7B8DD0BC">Завантаження файла: %1 ...</text>
+		<text id="progress.userMsg.gettingFile" h="FD5AED4D">Завантаження файла: %1 ...</text>
 		<text id="progress.userMsg.proxyFail" h="0BB99791">Помилка при Proxy авторизації для користувача '%1'</text>
 		<text id="progress.userMsg.errorRequesting" h="071BA7D1">Помилка при запиті файла '%1'</text>
 		<text id="progress.userMsg.userBreakDownloading" h="741C0781">Перервано користувачем завантаження файла '%1'</text>
@@ -93,7 +94,7 @@
 		<text id="progress.userMsg.unableToConnect" h="875EB6BC">Неможливо з’єднатися з сервером %1...</text>
 		<text id="progress.userMsg.errorParceURL" h="CF0D1F96">Помилка в записі URL</text>
 		<text id="main.msgBox.newUpdatesAvailable" h="1208BEAF">Оновлення є доступне на сервері. Завантажити його?</text>
-		<text id="main.msgBox.newVersionOfTracker" h="14EF65E8">Нова версія Tracker Update наявна і її слід установити для продовження роботи. Чи бажаєте зробити це зараз?</text>
+		<text id="main.msgBox.newVersionOfTracker" h="A7989EAD">Нова версія Tracker Update доступна і її слід установити для продовження роботи. Бажаєте зробити це зараз?</text>
 		<text id="progress.msgBox.askStartInstall" h="51A613BC">Чи готові Ви розпочати установку завантажених оновлень?</text>
 		<text id="progress.msgBox.askRebootAfterInstallPart1" h="1B90BEF6">Перезавантажте комп’ютер, щоб зміни набули чинності.</text>
 		<text id="progress.msgBox.askRebootAfterInstallPart2" h="4D247ABD">Чи бажаєте перезавантажити зараз?</text>
@@ -109,16 +110,19 @@
 		<text id="progress.userMsg.userBreakInstalling" h="0C3382A0">Перервано користувачем установку компоненти '%1'</text>
 		<text id="progress.userMsg.userCanceledInstalling" h="01F91004">Процес установки було відмінено користувачем.</text>
 		<text id="progress.txt.speedValue" h="E0217E21">%1 Kб/с</text>
+		<text id="progress.txt.speedMValue" h="0F1CDBC1">%1 MB/сек</text>
 		<text id="progress.txt.sizeValue" h="CCB7B0F4">%1 Kб (%2 байт)</text>
+		<text id="progress.txt.sizeMValue" h="F3696D45">%1 MB (%2 bytes)</text>
 		<text id="progress.txt.sec" h="CEB4987D">%1 с</text>
 		<text id="progress.txt.min" h="08103A63">%1 хв</text>
 		<text id="progress.txt.hour" h="CDADDDAA">%1 години</text>
 		<text id="settings.txt.noShedule" h="F1BADD25">Без графіка</text>
+		<text id="main.sysMenu.detailedLog" h="900F9660">Вікно детального запису</text>
 		<text id="main.msgBox.prepareDataText" h="A0AC1F07">Файл зі звітом збережено в %1 папці. Надішліть електронного листа до %2, в якому опишіть проблему і вкладіть цей файл. Відкрити папку зі створеним файлом?</text>
-		<text id="main.msgBox.prepareDataCaption" h="3084BBD4">Підготовка даних для звіту...</text>
+		<text id="main.msgBox.prepareDataCaption" h="C0C2B9FE">Підготовка даних для звіту</text>
+		<text id="logDlg.caption" h="D231833A">Детальний запис</text>
 		<text id="logDlg.context.copy" h="348DE55D">Скопіювати</text>
-		<text id="logDlg.context.enableAutoScroll" h="418EBA20">Автоматична прокрутка включена</text>
-		<text id="logDlg.context.disableAutoScroll" h="1222DA17">Автоматична прокрутка відключена</text>
+		<text id="logDlg.context.autoScroll" h="8DB625BC">Автопрокрутка</text>
 		<text id="progress.userMsg.downloadFailed" h="ECCCF9A3">Оновлення не завантажені.</text>
 		<text id="progress.userMsg.adminRightsReject" h="3F1C4DFD">Запит про привілейований режим відхилено.</text>
 		<text id="scheduler.txt.recurEvery" h="E86F8BDB">Повторювати кожного:</text>
@@ -183,6 +187,8 @@
 		<text id="trayMenu.about" h="06AA44B8">Про програму...</text>
 		<text id="about.dlg.name" h="F2596574">Про програму</text>
 		<text id="about.btn.ok" h="BA8105F8">Так</text>
+		<text id="about.txt.description.part1" h="07BE26B1">Tracker Updater допоможе Вам дізнатись про найновіші оновлення програм швидко і легко.</text>
+		<text id="about.txt.description.part2" h="29E9F95F">Tracker Updater запускається автоматично, згідно з графіком, або Ви можете запустити його з меню Допомога в PDF-XChange Editor-і чи з меню Start Вашого комп’ютера.</text>
 		<text id="about.dlg.version" h="2558B135">Версія %1</text>
 	</Strings>
 </Localization>

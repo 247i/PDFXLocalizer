@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123230501">2.00.00</Version>
+	<Version date="20230628235301">2.00.00</Version>
 	<Author></Author>
 	<Copyright></Copyright>
 	<Product id="PDFXDriver"/>
 	<Language eName="Ukrainian (Ukraine)" lName="Українська" code="uk-UA" R2L="false"/>
-	<Module name="officeAddin" namespace="addin" version="7.0.323.3"/>
+	<Module name="officeAddin" namespace="addin" version="10.0.1.371"/>
 	<Strings>
-		<text id="settings.title" h="F15A1E8C">Налаштування PDF-XChange</text>
+		<text id="AttachmentsProgress" h="38E31746">Обробка вкладень</text>
 		<text id="Bookmark.Column0" h="C091D68E">Стиль</text>
 		<text id="Bookmark.Column1" h="710B61B4">Тип</text>
 		<text id="Bookmark.Column2" h="FBB97B48">Рівень</text>
@@ -95,6 +95,7 @@
 		<text id="TransitionProgress" h="9FF6C6E7">Обробка переходів</text>
 		<text id="U3DObjectProgress" h="4531AF6D">Обробка об’єктів U3D Actify</text>
 		<text id="WebForms" h="CAE81AE2">Обробка веб форм</text>
+		<text id="adv.WhenFileExists" h="41A73B7C">Якщо файл існує:</text>
 		<text id="adv.compress3d" h="7BB049FD">Стискати U3D потоки (сповільнювати)</text>
 		<text id="adv.docInfo" h="F0272E80">Перетворювати інформацію про документ </text>
 		<text id="adv.enable3d" h="DE910287">Дозволяти розпізнавання Actify SFO</text>
@@ -105,11 +106,13 @@
 		<text id="adv.run" h="0EDB56E0">Запускати задану для перегляду PDF програму після завершення перетворення</text>
 		<text id="adv.save.before" h="C9BE1A86">Зберігати документ перед перетворенням</text>
 		<text id="adv.save.toOrigin" h="F34DC54F">Зберігати документ в оригінальну папку</text>
+		<text id="attachments.enable" h="171A315C">Перетворення об'єктів OLE як вкладення</text>
 		<text id="bkm.btn.clearAll" h="08DF5F04">Очистити всі</text>
 		<text id="bkm.btn.selectAll" h="CF8E2B6C">Виділити всі</text>
-		<text id="bkm.enable" h="5021B066">Створювати закладки в утвореному PDF файлі</text>
+		<text id="bkm.enable" h="F97BA442">Створювати закладки в утвореному PDF файлі</text>
 		<text id="bkm.expandAll" h="9C0CA419">Розгорнути всі закладки</text>
 		<text id="bkm.g1.title" h="0E415522">Доступні стилі</text>
+		<text id="btn.browse3" h="61C204E1">Вибрати...</text>
 		<text id="btn.clone" h="47D4FEC1">Клонувати</text>
 		<text id="btn.delete" h="9421FE90">Видалити...</text>
 		<text id="btn.rename" h="8D2D4BFD">Перейменувати...</text>
@@ -127,7 +130,7 @@
 		<text id="links.b.width" h="A7B7BD94">Ширина границі:</text>
 		<text id="links.crossDoc" h="900A9DAB">Посилання на різні документи</text>
 		<text id="links.crossRef" h="232E0A3E">Посилання на сторінки документа</text>
-		<text id="links.enable" h="1C059FA2">Створювати посилання в утвореному PDF файлі</text>
+		<text id="links.enable" h="B55F8B86">Створювати посилання в утвореному PDF файлі</text>
 		<text id="links.ext" h="4649B6CA">Змінити розширення файла на PDF</text>
 		<text id="links.footnote" h="4D696ED9">Посилання виносок</text>
 		<text id="links.g1.title" h="5000B228">Перетворювати посилання MS Office</text>
@@ -147,6 +150,17 @@
 		<text id="prof.l.comment" h="D41C404F">Коментар:</text>
 		<text id="prof.l.name" h="09FAD31D">Ім’я:</text>
 		<text id="profile.manage.g1.title" h="C71AA825">Доступні профайли</text>
+		<text id="save.custom" h="17550532">Програма:</text>
+		<text id="save.default" h="2A3C0112">Програма при замовчуванні для PDF файлів</text>
+		<text id="save.g2.title" h="9AAF3E71">Параметри запуску</text>
+		<text id="save.l.params" h="7B06AC69">Параметри:</text>
+		<text id="saveExists.type0" h="0D4B40B1">Показувати попередження</text>
+		<text id="saveExists.type1" h="B605C0F3">Завжди перезаписувати</text>
+		<text id="saveExists.type2" h="A8CFCFB8">Автонумерація</text>
+		<text id="saveExists.type3" h="1C9B2F2A">Об’єднати з наявним (додати в кінець)</text>
+		<text id="saveExists.type4" h="72FE1173">Об’єднати з наявним (додати в початок)</text>
+		<text id="saveExists.type5" h="A00336E6">Запитати нове ім’я файла:</text>
+		<text id="settings.title" h="F15A1E8C">Налаштування PDF-XChange</text>
 		<text id="visio.allPages" h="2DE2282D">Перетворювати всі сторінки</text>
 	</Strings>
 </Localization>

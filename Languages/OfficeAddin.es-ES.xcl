@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123230501">2.00.00</Version>
+	<Version date="20220223202328">2.00.00</Version>
 	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXDriver"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="Español" code="es-ES" R2L="false"/>
-	<Module name="officeAddin" namespace="addin" version="7.0.323.3"/>
+	<Module name="officeAddin" namespace="addin" version="9.3.360.0"/>
 	<Strings>
-		<text id="settings.title" h="F15A1E8C">Opciones de PDF-XChange</text>
+		<text id="AttachmentsProgress" h="38E31746">Se están procesando los adjuntos</text>
 		<text id="Bookmark.Column0" h="C091D68E">Estilo</text>
 		<text id="Bookmark.Column1" h="710B61B4">Tipo</text>
 		<text id="Bookmark.Column2" h="FBB97B48">Nivel</text>
@@ -95,6 +95,7 @@
 		<text id="TransitionProgress" h="9FF6C6E7">Se están procesando las transiciones</text>
 		<text id="U3DObjectProgress" h="4531AF6D">Se están procesando los objetos U3D Actify</text>
 		<text id="WebForms" h="CAE81AE2">Se están procesando los formularios web</text>
+		<text id="adv.WhenFileExists" h="41A73B7C">Si existe el archivo:</text>
 		<text id="adv.compress3d" h="7BB049FD">Comprimir los flujos &amp;U3D (es más lento)</text>
 		<text id="adv.docInfo" h="F0272E80">&amp;Convertir la información del documento</text>
 		<text id="adv.enable3d" h="DE910287">Permitir &amp;reconocimiento Actify 3D</text>
@@ -105,11 +106,13 @@
 		<text id="adv.run" h="0EDB56E0">Tras la conversión, iniciar la &amp;aplicación predeterminada para archivos PDF</text>
 		<text id="adv.save.before" h="C9BE1A86">&amp;Guardar el documento antes de la conversión</text>
 		<text id="adv.save.toOrigin" h="F34DC54F">Guardar el documento a la carpeta del documento &amp;original</text>
+		<text id="attachments.enable" h="171A315C">Convertir objetos OLE como adjuntos</text>
 		<text id="bkm.btn.clearAll" h="08DF5F04">&amp;Borrar todos</text>
 		<text id="bkm.btn.selectAll" h="CF8E2B6C">&amp;Seleccionar todos</text>
-		<text id="bkm.enable" h="5021B066">&amp;Generar marcadores en el archivo PDF resultante</text>
+		<text id="bkm.enable" h="F97BA442">&amp;Generar marcadores en el archivo PDF resultante</text>
 		<text id="bkm.expandAll" h="9C0CA419">&amp;Expandir todos los marcadores</text>
 		<text id="bkm.g1.title" h="0E415522">Estilos disponibles</text>
+		<text id="btn.browse3" h="61C204E1">Explorar...</text>
 		<text id="btn.clone" h="47D4FEC1">&amp;Clonar</text>
 		<text id="btn.delete" h="9421FE90">&amp;Borrar</text>
 		<text id="btn.rename" h="8D2D4BFD">Ca&amp;mbiar nombre</text>
@@ -127,7 +130,7 @@
 		<text id="links.b.width" h="A7B7BD94">&amp;Grosor del borde:</text>
 		<text id="links.crossDoc" h="900A9DAB">Enlaces entre documentos</text>
 		<text id="links.crossRef" h="232E0A3E">Enlaces entre referencias</text>
-		<text id="links.enable" h="1C059FA2">Generar enlaces en el archivo PDF resultante</text>
+		<text id="links.enable" h="B55F8B86">Generar enlaces en el archivo PDF resultante</text>
 		<text id="links.ext" h="4649B6CA">Cambiar la extensión de archivo a PDF</text>
 		<text id="links.footnote" h="4D696ED9">Enlaces para notas al pie y notas al final</text>
 		<text id="links.g1.title" h="5000B228">Convertir los enlaces de MS Office</text>
@@ -147,6 +150,17 @@
 		<text id="prof.l.comment" h="D41C404F">&amp;Comentario:</text>
 		<text id="prof.l.name" h="09FAD31D">&amp;Nombre:</text>
 		<text id="profile.manage.g1.title" h="C71AA825">Perfiles disponibles</text>
+		<text id="save.custom" h="17550532">Aplicación:</text>
+		<text id="save.default" h="2A3C0112">Aplicación predeterminada para los archivos PDF</text>
+		<text id="save.g2.title" h="9AAF3E71">Opciones de ejecución</text>
+		<text id="save.l.params" h="7B06AC69">Parámetros:</text>
+		<text id="saveExists.type0" h="0D4B40B1">Mostrar una ventana de aviso</text>
+		<text id="saveExists.type1" h="B605C0F3">Reemplazar siempre</text>
+		<text id="saveExists.type2" h="A8CFCFB8">Autonumerar</text>
+		<text id="saveExists.type3" h="1C9B2F2A">Combinar con el existente (añadir al final)</text>
+		<text id="saveExists.type4" h="72FE1173">Combinar con el existente (insertar al principio)</text>
+		<text id="saveExists.type5" h="A00336E6">Solcitar un nombre nuevo</text>
+		<text id="settings.title" h="F15A1E8C">Opciones de PDF-XChange</text>
 		<text id="visio.allPages" h="2DE2282D">Convertir &amp;todas las páginas</text>
 	</Strings>
 </Localization>

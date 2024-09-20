@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123215822">2.00.00</Version>
+	<Version date="20231212200645">2.00.00</Version>
 	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXEditor"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="español" code="es-ES" R2L="false"/>
-	<Module name="PDFConverter" namespace="pdfconv" version="7.0.323.3"/>
+	<Module name="PDFConverter" namespace="pdfconv" version="10.2.0.384"/>
 	<Strings>
-		<text id="DT" h="68CCD7A1">Símbolo decimal y separador de miles:</text>
+		<text id="AddLang" h="CE4DDC96">Añadir idioma...</text>
+		<text id="DT" h="99A777DC">Opciones para números</text>
 		<text id="Decimal" h="97B538F3">Símbolo decimal:</text>
+		<text id="DetectTable" h="8EFAF45F">Se detectan tablas en</text>
 		<text id="Fonts" h="09BC9E47">Tipografía:</text>
+		<text id="HasOCR" h="96B8D96E">Hay módulos de reconocimiento OCR para este idoma.</text>
+		<text id="Language" h="E5AFBDFE">Idioma:</text>
+		<text id="LayoutSettings" h="0EB6BCF7">Ajustes de disposición</text>
 		<text id="NoPermission" h="F6BEA48A">El documento está protegido. No tiene los permisos necesarios para realizar la conversión.</text>
+		<text id="PageLayout" h="2E7FA6E9">Conservar disposición de página</text>
+		<text id="Sheets" h="0E4A84A5">Crear hoja de cálculo</text>
+		<text id="TextFlow" h="D5276DB5">Conservar texto fluido</text>
 		<text id="cmd.name.P" h="FE79EAE9">Exportar a una presentación de Microsoft PowerPoint...</text>
 		<text id="cmd.name.Sel.P" h="10B9EA70">Exportar la selección a una presentación de Microsoft PowerPoint...</text>
 		<text id="cmd.name.Sel.W" h="F60B7012">Exportar la selección a un documento de Microsoft Word...</text>
@@ -31,17 +39,28 @@
 		<text id="convertation.DecimalThousandsError" h="9002FE5E">Los símbolos decimal y separador de miles deben ser diferentes</text>
 		<text id="convertation.Error1" h="388D83B4">Se produjo un error crítico durante la conversión del documento:</text>
 		<text id="convertation.Error2" h="A394ADBC">No es posible grabar el archivo resultante.</text>
+		<text id="convertation.ProWarning" h="64B1DA0A">Puede usar esta funcionalidad, pero lo hará en modo de evaluación y todas las páginas del achivo resultante llevarán sellos &lt;b&gt;DEMO&lt;/b&gt;. Además, la edición del archivo generado estará protegida con contraseña. Para evitar todo esto, &lt;a=1=""&gt;proporcione una clave válida&lt;/a&gt;. Consulte la &lt;a=3=""&gt;ayuda&lt;/a&gt; o visite nuestra &lt;a=2=""&gt;sede web&lt;/a&gt; para más información.
+
+¿Seguro que quiere continuar usando esta función?</text>
 		<text id="convertation.ThousandsError" h="1660BD37">El separador de miles no es válido</text>
 		<text id="dpi" h="B39AC2C1">ppp</text>
 		<text id="elseUseRegional" h="8F1D3748">* En caso contrario, se usará la configuración regional</text>
 		<text id="excel.filter" h="D766664D">Hoja de MS Excel</text>
+		<text id="getOCRLang" h="4275388E">Hay caracteres problemáticos en el documento que requieren un reconocmiento óptico. Indique el idioma del texto para obtener un reconocimiento correcto:</text>
 		<text id="newRowRul" h="4CD45F3D">Usar una fila nueva para cada uno</text>
 		<text id="options" h="DAD7B4F4">Opciones</text>
+		<text id="options.IBOcrFontsGlyphs" h="BB134F07">Algunos documentos PDF contienen tipografía con codificación de caracteres incorrecta. Cuando se convierten estos documentos a formatos de MS Office puede que resulten con texto confuso, porque no se pudo incrustar directamente dichas tipografías en los archivos generados. Si se encuentra con este problema, puede activar esta opción para usar el motor OCR para reconocer ópticamente símbolos; esto debería ayudar a proporcionar el texto correcto en los archivos generados.
+
+Nota: no utilice esta opción en los casos en que no aparzeca el problema con el texto generado.</text>
 		<text id="options.compress.0" h="378201C4">PNG</text>
 		<text id="options.compress.1" h="25090095">JPG</text>
 		<text id="options.dpilevel" h="4D4FE579">%1 ppp</text>
 		<text id="options.fontsembedmode.0" h="4FD6EAB9">Incrustar sólo las tipografías incrustadas en el documento PDF</text>
 		<text id="options.fontsembedmode.1" h="485361C4">Sin incrustar</text>
+		<text id="options.newRow.0" h="9CF38C36">Párrafo</text>
+		<text id="options.newRow.1" h="6D45691D">Línea</text>
+		<text id="options.newSheet.0" h="42E9E100">para cada página</text>
+		<text id="options.newSheet.1" h="FB4125FF">simple para el documento</text>
 		<text id="options.quality.0" h="8415F85F">Mínima</text>
 		<text id="options.quality.1" h="845E3D8C">Baja</text>
 		<text id="options.quality.2" h="91153342">Mediana</text>
@@ -50,15 +69,16 @@
 		<text id="options.textmode.0" h="77B1E837">Mantener editable el texto</text>
 		<text id="options.textmode.1" h="8419D7CE">Convertir en curvas</text>
 		<text id="options.textmode.2" h="60E91945">Convertir en imágenes</text>
-		<text id="options.newRow.0" h="9CF38C36">Párrafo</text>
-		<text id="options.newRow.1" h="6D45691D">Línea</text>
 		<text id="optionsCBAllowCurves" h="976099D8">Permitir que se convierta a curvas el texto con problemas</text>
 		<text id="optionsCBAllowSubstitution" h="169F5988">Permitir la sustitución con fuentes alternativas</text>
 		<text id="optionsCBEmbedFont" h="3E50224C">Incrustar todas las tipografías</text>
 		<text id="optionsCBIncludeComments" h="B08E5CA8">Incluir los comentarios</text>
 		<text id="optionsCBIncludeImages" h="969B2F6C">Incluir las imágenes</text>
 		<text id="optionsCBIncludeLinks" h="F5F4CED4">Incluir los enlaces</text>
+		<text id="optionsCBOcrFontsGlyphs" h="6DCBFDE4">Usar OCR para corregir texto confuso en los archivos producidos.</text>
 		<text id="optionsCBPageToImage" h="0707FDB4">Convertir todo el contenido de la página en una imagen</text>
+		<text id="optionsCBShowInvisibleText" h="68D10624">Mostrar en el documento de salida el texto invisible</text>
+		<text id="optionsCBTablesDetect" h="A594BBA0">Detectar tablas</text>
 		<text id="optionsGBCommonOpt" h="5B3B421B">Opciones comunes</text>
 		<text id="optionsGBTextOpt" h="D7BD8320">Opciones de conversión del texto</text>
 		<text id="optionsIBTextRaster" h="699A1B72">El texto se digitalizará como imagen si no se puede convertir de acuerdo con las opciones anteriores.</text>
@@ -73,9 +93,9 @@
 		<text id="optionsLBlastHope" h="F73DC603">NOTA: Si fallase la conversión de texto en curvas, el texto se convertirá en imágenes.
 		</text>
 		<text id="powerpoint.filter" h="9FB63544">Presentación de MS PowerPoint</text>
-		<text id="regionalDT" h="929F7393">Usar la configuración regional</text>
+		<text id="regionalDT" h="FB22F59E">Usar la configuración regional para detectar los separadores decimal y de separación</text>
 		<text id="thousands" h="256655C5">Separador de miles:</text>
-		<text id="userDefinedDT" h="CFDC144E">Usar personalizado:</text>
+		<text id="userDefinedDT" h="7EA9F301">Tratar los siguientes como separadores decimal y de miles:</text>
 		<text id="word.filter" h="6BB79C71">Documento de MS Word</text>
 	</Strings>
 </Localization>

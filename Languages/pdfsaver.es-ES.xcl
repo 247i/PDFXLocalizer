@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123230436">2.00.00</Version>
-	<Author>A. Herráez</Author>
+	<Version date="20231212202456">2.00.00</Version>
+	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXDriver"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="Español" code="es-ES" R2L="false"/>
-	<Module name="pdfSaver" namespace="saver" version="7.0.323.3"/>
+	<Module name="pdfSaver" namespace="saver" version="10.2.0.384"/>
 	<Strings>
 		<text id="about.version" h="2558B135">Versión %1</text>
 		<text id="btn.help" h="2C29CD29">A&amp;yuda...</text>
@@ -25,6 +25,7 @@
 		<text id="errDlg.header" h="E8A076C8">No es posible grabar &lt;b&gt;%1&lt;/b&gt;.</text>
 		<text id="errDlg.text" h="3FD6CA0D">Se ha producido un error mientras se grababa un documento en el archivo:
 &lt;b&gt;%1&lt;/b&gt;</text>
+		<text id="errDlg.text2" h="4E388C6D">No se puede añadir el documento debido a la seguridad del documento existente (%1).</text>
 		<text id="filter.all" h="A1868C9F">Todos los archivos</text>
 		<text id="filter.pdf" h="21DC74BD">Documentos PDF (*.pdf)</text>
 		<text id="l.sec" h="68B35B56">segundos</text>
@@ -48,7 +49,7 @@ Guardar con numeración automática</text>
 Cancelar la operación y abandonar la tarea</text>
 		<text id="overwrite.over" h="13CC8739">Sobreescribir
 Reemplazar el archivo existente</text>
-		<text id="overwrite.prepend" h="7703513C">Insertar antes
+		<text id="overwrite.prepend" h="9BD19348">Insertar antes
 Combinar con un archivo existente</text>
 		<text id="overwrite.select" h="60AA7DB4">Elegir otro rachivo
 Seleccionar otro archivo para el nuevo documento</text>
@@ -64,5 +65,12 @@ Seleccionar otro archivo para el nuevo documento</text>
 		<text id="save.cb.email" h="93B339D4">&amp;Enviar por correo el PDF una vez generado</text>
 		<text id="save.cb.run" h="B14F25C0">Abrir el programa &amp;visor tras haber guardado</text>
 		<text id="tryAgain" h="B119E265">Intentar de nuevo</text>
+		<text id="pass.title" h="23DE88B2">Escriba la contraseña</text>
+		<text id="pass.header" h="28DF2139">El documento &lt;b&gt;%1&lt;/b&gt; está protegido por contraseña.</text>
+		<text id="pass.user" h="8B04881C">Escriba la contraseña válida de usuario o propietario del documento:</text>
+		<text id="pass.owner" h="1BB59772">Escriba la contraseña válida de &lt;b&gt;propietario&lt;/b&gt; del documento:</text>
+		<text id="sec.protection" h="B7EE190B">Protección</text>
+		<text id="sec.xfa" h="483F0CC0">XFA</text>
+		<text id="sec.signature" h="D9728CE0">Firma</text>
 	</Strings>
 </Localization>

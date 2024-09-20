@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180627193906">2.00.00</Version>
+	<Version date="20181205073708">2.00.00</Version>
 	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXEditor"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="Español" code="es-ES" R2L="false"/>
-	<Module name="OneDrivePlugin" namespace="od" version="7.0.325.10"/>
+	<Module name="OneDrivePlugin" namespace="od" version="7.0.327.10"/>
 	<Strings>
 		<text id="DlgOpenFile" h="F5F0D3C4">Abrir documento desde OneDrive</text>
 		<text id="DlgSaveFile" h="8E6D35E7">Guardar el archivo en OneDrive</text>
@@ -23,7 +23,6 @@
 		<text id="cpt.saveReplace" h="520CB069">Guardar el archivo</text>
 		<text id="cpt.selectFile" h="C55D68B0">Selección de archivo</text>
 		<text id="cpt.unableToSaveToVirtualFolder" h="778EF99A">No es posible guardar el archivo en esa carpeta</text>
-		<text id="dlg.Auth" h="EC0513C8">$$$.od.dlg.Auth</text>
 		<text id="dlg.Auth" h="6D5E22C0">Autenticación en OneDrive</text>
 		<text id="fileName" h="DEC92488">Nombre archivo:</text>
 		<text id="lb.CurrentFolder" h="44158804">Carpeta actual:</text>
@@ -49,5 +48,26 @@
 		<text id="msg.unableToSaveToVirtualFolder" h="A6644426">No es posible guardar el archivo en la ubicación elegida. Debe elegir la carpeta 'Mi unidad' o bien una de sus subcarpetas o una de las carpetas en 'compartido conmigo'</text>
 		<text id="virtualfolder.mydrive" h="84C2D3A6">Mi unidad</text>
 		<text id="virtualfolder.sharedwithme" h="8B65307E">Compartido conmigo</text>
+		<text id="addFolder.title" h="42CD8D51">Crear una carpeta</text>
+		<text id="addFolder.message" h="940CF2FA">Escriba un nombre para la nueva carpeta</text>
+		<text id="addFolderError.title" h="DDB9C8A8">No es posible crear la carpeta</text>
+		<text id="addFolderError.message" h="E37B3660">No ha sido posible crear una carpeta en OneDrive. Compruebe su conexión a internet y los permisos de acceso al recurso OneDrive.</text>
+		<text id="btn.addFolder.text" h="69FFFB47">&amp;Crear una carpeta</text>
+		<text id="btn.settings" h="9757D0D9">Opciones...</text>
+		<text id="deleteError.title" h="002A7E1A">No ha sido posible borrar el elemento</text>
+		<text id="deleteError.message" h="ABCC0ED6">No ha sido posible borrar %1 "%2" en OneDrive. %3</text>
+		<text id="deleteError.reason" h="09E96BF8">Compruebe su conexión a internet y que tenga los permisos para poder acceder en OneDrive al recurso indicado.</text>
+		<text id="btn.delete.text" h="ED580C1E">&amp;Borrar</text>
+		<text id="btn.folder.up.text" h="FDE69FB2">&amp;Subir</text>
+		<text id="file" h="AFFADF08">archivo</text>
+		<text id="folder" h="1DAC8D17">carpeta</text>
+		<text id="deleteError.unknownItem.message" h="D27D16CB">No ha sido posible borrar el elemento en OneDrive. %1</text>
+		<text id="delete.title" h="FC00502F">"Borrar elemento(s)"</text>
+		<text id="delete.message" h="16714AA7">"¿Quiere borrar %1 "%2"?"</text>
+		<text id="deleteMulti.message" h="806F170A">"¿Quiere borrar %1 elementos de la carpeta "%2" en OneDrive?"</text>
+		<text id="deleteMulti.progress" h="7A18F8DD">"Se está borrando el elemento nº %1 de %2"</text>
+		<text id="deleteMulti.progress.title" h="CE70C7AD">"Se están borrando los elementos de OneDrive"</text>
+		<text id="deleteSingle.progress" h="B781BCCF">"Se está borrando %1 "%2""</text>
+		<text id="deleteSingle.progress.title" h="448891FC">"Se está borrando el elemento de OneDrive"</text>
 	</Strings>
 </Localization>

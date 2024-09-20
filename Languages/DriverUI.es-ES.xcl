@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123230407">2.00.00</Version>
+	<Version date="20230628235234">2.00.00</Version>
 	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXDriver"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="Español" code="es-ES" R2L="false"/>
-	<Module name="DriverUI" namespace="" version="7.0.323.3"/>
+	<Module name="DriverUI" namespace="" version="10.0.1.371"/>
 	<Strings>
 		<text id="btn.ok" h="FEF0C771">&amp;Aceptar</text>
 		<text id="btn.cancel" h="3D302A38">&amp;Cancelar </text>
@@ -170,7 +170,7 @@ Para guardar su configuración en el perfil, pulse en los botones 'Guardar' o 'C
 		<text id="langsList.column.name" h="F479395C">Nombre normalizado</text>
 		<text id="langsList.column.locName" h="45A2C755">Nombre local</text>
 		<text id="langs.Default" h="A50C20C9">English (US), Built-In</text>
-		<text id="langs.Auto" h="343D08C2">Usar ajustes regionales</text>
+		<text id="langs.Auto" h="EB653CD4">Usar el idioma del sistema</text>
 		<text id="compr.auto" h="471FE15D">Automático</text>
 		<text id="compr.zip" h="D460493A">Flate</text>
 		<text id="compr.jpeg" h="58DE58E0">JPEG</text>
@@ -182,7 +182,7 @@ Para guardar su configuración en el perfil, pulse en los botones 'Guardar' o 'C
 		<text id="compr.ccitt3" h="B7DD624B">CCITT Grupo 3</text>
 		<text id="compr.ccitt4" h="F89CF48C">CCITT Grupo 4</text>
 		<text id="compr.jbig2" h="DE3BC257">JBIG 2</text>
-		<text id="compr.jbig2.std" h="C6DA1F99">Estándar</text>
+		<text id="compr.jbig2.std" h="C6DA1F99">Normal</text>
 		<text id="compr.jbig2.crop" h="089616A4">Recortar bordes</text>
 		<text id="compr.jbig2.symbol" h="8EB3D116">Compresión de símbolos (sin pérdidas)</text>
 		<text id="conv.none" h="B58BD00F">Sin conversión</text>
@@ -387,6 +387,8 @@ Para guardar su configuración en el perfil, pulse en los botones 'Guardar' o 'C
 		<text id="digisig.certify.DocMDP1" h="B15220D4">No se permiten cambios</text>
 		<text id="digisig.certify.DocMDP2" h="550E66E3">Permitir rellenado de campos, firma y creación de páginas plantilla</text>
 		<text id="digisig.certify.DocMDP3" h="1BFCB157">Permitir rellenado de campos, firma, comentarios y creación de páginas plantilla</text>
+		<text id="digisig.format.pkcs7" h="D3C0DF54">PKCS#7 - Detached</text>
+		<text id="digisig.format.cades" h="C17C6AFB">CAdES</text>
 		<text id="sign.by" h="CFEFFC81">por %1</text>
 		<text id="dlg.lic.l1" h="D7BC993E">Claves de licencia instaladas:</text>
 		<text id="dlg.lic.btn.addKey" h="0F0F4E82">&amp;Añadir una clave de licencia...</text>
@@ -414,8 +416,8 @@ Esta acción será irreversible.</text>
 		<text id="lic.msg.cpySerial.Text1" h="C7390EF4">El cuerpo de la(s) clave(s) de licencia seleccionada(s) se ha copiado al portapapeles.</text>
 		<text id="lic.msg.cpySerial.Text2" h="24BBB950">La descripción completa de la(s) clave(s) de licencia seleccionada(s) se ha copiado al portapapeles.</text>
 		<text id="lic.msg.addSerial.Hdr" h="ECE08EA4">El resultado de añadir clave(s) de licencia nueva(s) es:</text>
-		<text id="lic.msg.addSerial.Text11" h="64C435DB">Se ha añadido correctamente a su lista 1% clave de licencia.</text>
-		<text id="lic.msg.addSerial.Text12" h="58D1D708">Se han añadido correctamente a su lista 1% claves de licencia.</text>
+		<text id="lic.msg.addSerial.Text11" h="64C435DB">Se ha añadido correctamente a su lista %1 clave de licencia.</text>
+		<text id="lic.msg.addSerial.Text12" h="58D1D708">Se han añadido correctamente a su lista %1 claves de licencia.</text>
 		<text id="lic.msg.addSerial.Text21" h="529FFB06">Se ha omitido %1 clave de licencia porque ya existe en su lista.</text>
 		<text id="lic.msg.addSerial.Text22" h="2DA01DFD">Se han omitido %1 claves de licencia porque ya existen en su lista.</text>
 		<text id="lic.msg.addSerial.Text31" h="569F1BFD">Se ha filtrado %1 clave de licencia porque no es adecuada para este producto.</text>
@@ -471,6 +473,11 @@ Como alternativa, puede visitar &lt;a id="1"&gt;esta página web&lt;/a&gt; para 
 		<text id="lic.addKeyDlg.btn.Paste" h="E7F59864">Pegar la clave desde el portapapeles</text>
 		<text id="lic.addKeyDlg.btn.Continue" h="B72C4E18">Continuar...</text>
 		<text id="lic.msg.addSerialErr.Text2" h="E821568E">No ha indicado clave(s) de licencia válida(s).</text>
+		<text id="lic.key.subscription.title" h="1EC9C51B">(Suscripción)</text>
+		<text id="lic.key.subscription.tip" h="F7F2FF8D">DÍAS DE SUCRIPCIÓN RESTANTES</text>
+		<text id="lic.key.subscription.left" h="8771F78E">Quedan %1 días de suscripción</text>
+		<text id="lic.key.subscription.expired" h="5111B0B3">la suscripción ha caducado</text>
+		<text id="lic.key.subscription.notActive" h="48AF704F">La clave de suscripción no está aún activada</text>
 		<text id="msg.SMTP.NoServer" h="0141A9D3">Debe indicar el nombre del servidor SMTP.</text>
 		<text id="msg.SMTP.Remove" h="468A2A4A">¿Desea realmente eliminar la configuración del servidor SMTP que ha seleccionado?</text>
 		<text id="msg.custom.form.delete" h="D5818ABF">¿Desea realmente eliminar este formulario personalizado?</text>
@@ -645,22 +652,20 @@ Escríbala de nuevo.</text>
 		<text id="page.optimization.title" h="638FC2A7">Opciones para optimización</text>
 		<text id="page.languages.name" h="C41449B2">Idiomas</text>
 		<text id="page.languages.title" h="D5C43A44">Elija el idioma para la interfaz de usuario</text>
-		<text id="about.copyright" h="959E18E0">Copyright © 2001-2017 by &lt;a=1&gt;Tracker Software Products (Canada) Ltd,&lt;/a&gt;
-PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</text>
-		<text id="about.credits" h="28592C00">All Other Trademarks/Copyrights acknowledged &amp; are the property of their respective owners, including:
-•     Zlib by Mark Adler &amp; Jean-Loup Gailly,
-•     Little CMS by Marti Maria and IPG © 1991-98.
-•     Freetype2 by David Turner, Robert Wilhelm, &amp; Werner Lemberg © 1996-2001, 2006
-•     Tesseract OCR Engine. Originally developed at Hewlett Packard Laboratories Bristol and at Hewlett-Packard Co, Greeley Colorado,
-      all the code in this distribution is now licensed under the Apache License.</text>
+		<text id="about.copyright" h="82C6BF79">Copyright © 2001-2018 por &lt;a=1&gt;Tracker Software Products (Canada) Ltd&lt;/a&gt;, PDF-XChange Co Ltd.
+PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - TODOS LOS DERECHOS RESERVADOS.</text>
+		<text id="about.credits" h="5131C284">PDF-XChange es una marcar registrada de PDF-XChange Co LtdSe reconocen todas las demás marcas registradas y copyrights que son propiedad de sus respectivos dueños, incluyendo:•     Zlib, por Mark Adler y Jean-Loup Gailly,•     Little CMS, por Marti Maria e IPG © 1991-98.•     Freetype2, por David Turner, Robert Wilhelm y Werner Lemberg © 1996-2001, 2006•     Tesseract OCR Engine. Desarrollado originalmente por Hewlett Packard Laboratories Bristol y en Hewlett-Packard Co, Greeley Colorado,
+      todo el código en esta distribución está ahora bajo la Licencia de Apache.</text>
 		<text id="about.help" h="6887DFB0">A&amp;yuda...</text>
 		<text id="about.reg" h="05BF124F">&amp;Registro...</text>
 		<text id="about.version" h="52344715">Versión &lt;b&gt;%1&lt;/b&gt; (compilación &lt;b&gt;%2&lt;/b&gt;)%3%4</text>
 		<text id="above" h="09C2601E">Para imágenes de más de::</text>
+		<text id="bk.Level" h="AEA169E8">&amp;Nivel:</text>
 		<text id="bk.asTitle" h="513216FA">Usar el &amp;título del documento como base de los nombres de marcadores</text>
 		<text id="bk.disp.color" h="02977B17">Co&amp;lor:</text>
 		<text id="bk.disp.state" h="EE1B645B">Esta&amp;do:</text>
 		<text id="bk.disp.style" h="AEC0CE33">E&amp;stilo:</text>
+		<text id="bk.dispMode" h="5CA46335">Modalidad de &amp;visualización:</text>
 		<text id="bk.enable" h="F09B2FCA">Activar la detección automática de &amp;marcadores</text>
 		<text id="bk.g.title" h="1492312B">Opciones de detección</text>
 		<text id="bk.g1.title" h="1366B304">Plantilla</text>
@@ -668,8 +673,6 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="bk.load" h="96130CAB">Ca&amp;rgar...</text>
 		<text id="bk.match" h="85EA08AA">&amp;Buscar coinicidencia independientemente del nivel</text>
 		<text id="bk.multi" h="B5D3268E">Permitir marcadores de &amp;varias líneas</text>
-		<text id="bk.dispMode" h="5CA46335">Modalidad de &amp;visualización:</text>
-		<text id="bk.Level" h="AEA169E8">&amp;Nivel:</text>
 		<text id="bk.opened" h="ECDD3B81">Abierto</text>
 		<text id="bk.save" h="46DCCD20">&amp;Guardar...</text>
 		<text id="bk.use.color" h="37314879">&amp;Color:</text>
@@ -679,9 +682,9 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="btn.browse2" h="FF1DC93F">E&amp;xaminar...</text>
 		<text id="btn.browse3" h="0BAC1EBD">&amp;Examinar...</text>
 		<text id="btn.edit" h="26BB263A">&amp;Editar...</text>
+		<text id="btn.macro" h="A202F8D8">Ma&amp;cro</text>
 		<text id="btn.new" h="F41C4AA5">N&amp;uevo...</text>
 		<text id="btn.reset" h="E704BDE1">&amp;Restaurar</text>
-		<text id="btn.macro" h="A202F8D8">Ma&amp;cro</text>
 		<text id="compr.cb.compr.ascii" h="2A016E94">Formato &amp;ASCII (los archivos serán mayores)</text>
 		<text id="compr.cb.compr.graphics" h="ED1F20CB">Comprimir los &amp;gráficos</text>
 		<text id="compr.cb.compr.text" h="0FDBEC91">Comprimir el &amp;texto</text>
@@ -703,9 +706,14 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="custform.g2.title" h="3E43518D">Dimensiones del formulario personalizado</text>
 		<text id="custform.g3.title" h="AA174316">Unidades</text>
 		<text id="custform.l.width" h="B061B0AB">A&amp;ncho:</text>
+		<text id="custhf.l.center" h="C0678ECB">Sección central:</text>
+		<text id="custhf.l.left" h="192F6142">Sección izquierda:</text>
+		<text id="custhf.l.right" h="3CB13D9F">Sección derecha:</text>
 		<text id="dlg.AddCustomForm" h="B88CFE3B">Adición o edición de un formulario personalizado</text>
 		<text id="dlg.AddMode" h="CBEDEC17">Adición o edición del modo de controlador</text>
+		<text id="dlg.AddMode.app" h="D2DF7469">Nombre de la aplicación o programa:</text>
 		<text id="dlg.AddMode.app.cue" h="696733B2">p.ej.:  winword.exe</text>
+		<text id="dlg.AddMode.mode" h="25328698">Modo de controlador para esta aplicación:</text>
 		<text id="dlg.AddWatermark" h="F5059D91">Adición o modificación de marcas de agua</text>
 		<text id="dlg.Customize" h="E3787BF8">Personalización</text>
 		<text id="dlg.CustomizeHF" h="B562B8E4">Personalización</text>
@@ -753,36 +761,39 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="ds.cb.logo" h="EB08AA01">Mostrar un &amp;logotipo</text>
 		<text id="ds.cb.name" h="63FE3EDE">No&amp;mbre:</text>
 		<text id="ds.cb.reason" h="11BD8A6E">Motivo</text>
+		<text id="ds.cb.revocation" h="0DC12DF3">Incluir el estado de revocación de la firma</text>
 		<text id="ds.cb.subject" h="8D5A19C4">Asunto</text>
 		<text id="ds.create" h="BB3716B9">&amp;Crear &amp;un certificado...</text>
 		<text id="ds.g1.title" h="96999927">Identificador digital</text>
 		<text id="ds.g2.title" h="AEE125D6">Detalles</text>
 		<text id="ds.g4.title" h="EFFDDE78">Aspecto</text>
 		<text id="ds.g5.title" h="0C13107E">Posición</text>
+		<text id="ds.g6.title" h="DAD7B4F4">Opciones</text>
 		<text id="ds.img.cue" h="51846090">&lt;pulse para buscar una imagen&gt;</text>
 		<text id="ds.l.contact" h="A8B0C056">&amp;Información contacto:</text>
+		<text id="ds.l.format" h="3E704C67">Formato de firma:</text>
 		<text id="ds.l.graphic" h="880A621F">&amp;Gráficos:</text>
 		<text id="ds.l.height" h="EF61EFBD">Alto:</text>
 		<text id="ds.l.hoffset" h="DF4C107F">Posición horizontal:</text>
 		<text id="ds.l.issued" h="B245A018">&amp;Emitido para:</text>
 		<text id="ds.l.location" h="C9265ABC">&amp;Ubicación:</text>
+		<text id="ds.l.page" h="660A3F38">Página:</text>
 		<text id="ds.l.perms" h="65731FF3">&amp;Permisos:</text>
 		<text id="ds.l.reason" h="9BA10106">Moti&amp;vo de la firma:</text>
 		<text id="ds.l.useFile" h="7EA982B8">&amp;Nombre de archivo:</text>
 		<text id="ds.l.voffset" h="ACE5B906">Posición vertical:</text>
 		<text id="ds.l.width" h="85C783C5">Ancho:</text>
-		<text id="ds.l.page" h="660A3F38">Página:</text>
 		<text id="ds.lastPage" h="6362BC4B">En la última página</text>
 		<text id="ds.useFile" h="664F560D">Usar un certificado de un &amp;archivo</text>
 		<text id="ds.useSystem" h="B064DE08">Usar un certificado del &amp;sistema</text>
 		<text id="ds.view" h="BE4DE4A8">&amp;Mostrar el certificado...</text>
 		<text id="ds.visible" h="D0D758F9">Colocar una firma &amp;visible en la posición indicada</text>
-		<text id="email.method" h="6900EC9A">&amp;Método:</text>
 		<text id="email.bcc" h="545EB298">Copia &amp;oculta (Bcc):</text>
 		<text id="email.cc" h="45106A78">&amp;Copia (Cc):</text>
 		<text id="email.content" h="64D3C808">Co&amp;ntenido:</text>
-		<text id="email.enable" h="BA8783C7">Adjuntar el documento generado a un mensaje de correo electrónico</text>
+		<text id="email.enable" h="85311A1F">&amp;Adjuntar el documento generado a un mensaje de correo electrónico</text>
 		<text id="email.from" h="60652CC5">&amp;Remitente:</text>
+		<text id="email.method" h="6900EC9A">&amp;Método:</text>
 		<text id="email.props" h="61B2B055">Propiedades del mensaje de correo</text>
 		<text id="email.server" h="74EFFD0D">&amp;Servidor:</text>
 		<text id="email.smtp" h="28F504E2">Propiedades de SMTP (servidor saliente de correo)</text>
@@ -827,6 +838,8 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="gen.resize" h="60879BE7">&amp;Ajustar la ventana del documento al tamaño de la primera página</text>
 		<text id="graph.l.threshold" h="B2FADA6C">Umbral:</text>
 		<text id="graph.use.dither" h="3FA24F74">Difuminado</text>
+		<text id="hf.customize1" h="B562B8E4">Personalizar...</text>
+		<text id="hf.customize2" h="B562B8E4">Personalizar...</text>
 		<text id="hf.enable" h="C8410A02">&amp;Añadir cabeceras y pies de página</text>
 		<text id="hf.foot" h="ECBC4A48">&amp;Pie:</text>
 		<text id="hf.g1.title" h="5244D472">Cabecera y pie de página</text>
@@ -839,18 +852,19 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="hf.l.right" h="C896EA9F">&amp;Derecho:</text>
 		<text id="hf.l.top" h="DBE4B23E">&amp;Superior:</text>
 		<text id="hf.units" h="A29BF002">&amp;Unidades:</text>
-		<text id="hf.customize1" h="B562B8E4">Personalizar...</text>
-		<text id="hf.customize2" h="B562B8E4">Personalizar...</text>
-		<text id="links.check" h="572D738F">Comprobar si e&amp;xiste el archivo para enlazarlo</text>
-		<text id="links.detect" h="BADAE078">&amp;Detectar nombres de archivos y convertir en enlaces PDF</text>
-		<text id="links.enable" h="88E82DA8">&amp;Analizar las URL en el texto impreso</text>
-		<text id="links.local" h="8C690B8E">Archivos locales</text>
-		<text id="links.options" h="4A56A155">Opciones de enlaces</text>
-		<text id="links.border.type" h="F1E3B439">&amp;Tipo de borde:</text>
+		<text id="lang.btn.asDefault" h="DFA4AF2F">FIjar predeterminado</text>
+		<text id="lang.l.more" h="2E2CCD84">&lt;a=1&gt;Otros idiomas...&lt;/a&gt;</text>
+		<text id="lang.l.select" h="8E26C53F">Elija el idioma que prefiera para mostrar la interfaz:</text>
 		<text id="links.border.color" h="20E74546">&amp;Color del borde:</text>
 		<text id="links.border.style" h="8CB0F062">E&amp;stilo del borde:</text>
+		<text id="links.border.type" h="F1E3B439">&amp;Tipo de borde:</text>
 		<text id="links.border.width" h="A7B7BD94">&amp;Grosor del borde:</text>
+		<text id="links.check" h="572D738F">Comprobar si e&amp;xiste el archivo para enlazarlo</text>
+		<text id="links.detect" h="BADAE078">&amp;Detectar nombres de archivos y convertir en enlaces PDF</text>
+		<text id="links.enable" h="E514ECEA">&amp;Analizar las URL en el texto impreso</text>
 		<text id="links.l.example" h="1F37513E">Ejemplo:</text>
+		<text id="links.local" h="8C690B8E">Archivos locales</text>
+		<text id="links.options" h="4A56A155">Opciones de enlaces</text>
 		<text id="mail.smtp" h="E2F8F5FC">Servidor SMTP</text>
 		<text id="mail.smtp.pass" h="7FAD5B01">Contra&amp;seña:</text>
 		<text id="mail.smtp.port" h="3F32F0C0">&amp;Puerto:</text>
@@ -860,14 +874,11 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="mail.smtp.serverName" h="BD084E34">&amp;Nombre del servidor:</text>
 		<text id="mail.smtp.serverNameCue" h="BE98874E">por ejemplo, smtp.example.com</text>
 		<text id="mail.smtp.userName" h="6901D750">&amp;Nombre de usuario:</text>
-		<text id="lang.l.select" h="8E26C53F">Elija el idioma que prefiera para mostrar la interfaz:</text>
-		<text id="lang.l.more" h="2E2CCD84">&lt;a=1&gt;Otros idiomas...&lt;/a&gt;</text>
-		<text id="lang.btn.asDefault" h="DFA4AF2F">FIjar predeterminado</text>
+		<text id="opt.g1" h="DAD7B4F4">Opciones</text>
 		<text id="opt.grayAsRGB" h="BE6DCABB">Traducir la paleta de grises al espacio de color RGB</text>
 		<text id="opt.l.blend" h="5C764562">Operación de mezcla:</text>
 		<text id="opt.l.detess" h="04F08091">Eliminación de teselado:</text>
 		<text id="opt.masked" h="6970012F">Usar imágenes con máscara</text>
-		<text id="opt.g1" h="DAD7B4F4">Opciones</text>
 		<text id="opt.mbytes" h="E03A7614">МBytes</text>
 		<text id="opt.optImages" h="0E1D0448">Permitir la optimización de secuencias de imágenes</text>
 		<text id="opt.swap" h="305C86AE">Pasar al disco las imágenes superiores a:</text>
@@ -887,7 +898,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="over.repeat.cont" h="7A290673">Repetición c&amp;ontinua de un archivo superpuesto más corto</text>
 		<text id="over.repeat.last" h="B744CD52">Repetir la últi&amp;ma página de un archivo superpuesto más corto</text>
 		<text id="over.repeat.none" h="6361EAE7">Si&amp;n repetición</text>
-		<text id="papList.label" h="5BB50205">Lista de formularios personalizados dsiponibles:</text>
+		<text id="papList.label" h="A6F335A5">Lista de formularios personalizados dsiponibles:</text>
 		<text id="paper.c.borders" h="872135AE">Imprimir bordes de página</text>
 		<text id="paper.cb.center" h="CBEFB4D0">Centrada</text>
 		<text id="paper.cb.fit" h="9078F779">Ajustar</text>
@@ -896,6 +907,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="paper.g2" h="6DD64EA1">Gráfico</text>
 		<text id="paper.g3" h="A9BCB1A8">Disposición</text>
 		<text id="paper.g4" h="D92FF225">Opciones avanzadas de impresión</text>
+		<text id="paper.g5" h="070DE448">Formato de salida</text>
 		<text id="paper.l.booklettype" h="E40660F9">Tipo de folleto:</text>
 		<text id="paper.l.gutter" h="453C4022">Medianil:</text>
 		<text id="paper.l.ltype" h="7E455932">Tipo:</text>
@@ -904,12 +916,12 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="paper.l.orientation" h="F5C1FFB9">&amp;Orientación:</text>
 		<text id="paper.l.pageOrder" h="4415E37B">Or&amp;den de las páginas:</text>
 		<text id="paper.l.position" h="C87B8489">Posición:</text>
+		<text id="paper.l.resolution" h="4103E512">&amp;Resolución:</text>
 		<text id="paper.l.scale" h="C4EC7E3C">Escalado:</text>
 		<text id="paper.l.sheets" h="3C8E1D5A">Hojas en la firma:</text>
 		<text id="paper.l.sheetsize" h="A2557222">Tamaño hoja:</text>
 		<text id="paper.l.size" h="E1908ECB">Tamaño:</text>
 		<text id="paper.l.ssize" h="E1908ECB">Tamaño:</text>
-		<text id="paper.l.resolution" h="4103E512">&amp;Resolución:</text>
 		<text id="paper.mirror.x" h="C5289BB7">Reflejar por el eje &amp;X</text>
 		<text id="paper.mirror.y" h="5E8DD7D8">Reflejar por el eje &amp;Y</text>
 		<text id="paper.rb.custom" h="1A432471">&amp;Personal:</text>
@@ -917,10 +929,15 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="paper.rb.portrait" h="A9A67C11">&amp;Vertical</text>
 		<text id="paper.rb.standard" h="D724FB24">&amp;Habitual:</text>
 		<text id="ppi" h="164A6A9C">píxeles por pulgada</text>
+		<text id="prof.l.comment" h="D41C404F">Co&amp;mentario:</text>
+		<text id="prof.l.info" h="D5319E61">Información del perfil</text>
+		<text id="prof.l.name" h="09FAD31D">&amp;Nombre:</text>
+		<text id="prof.manage.g1" h="C71AA825">Perfiles disponibles</text>
 		<text id="prop.about" h="F2596574">Acerca del programa</text>
 		<text id="prop.settings" h="9147CD71">Opciones</text>
 		<text id="rb.inch" h="3D2782C6">&amp;Pulgadas</text>
 		<text id="rb.mm" h="291025E5">&amp;Milímetros</text>
+		<text id="save.cb.lastUsed" h="07DD776B">Abrir el diálogo en la carpeta &amp;usada más recientemente</text>
 		<text id="save.custom" h="A75E6832">&amp;Aplicación:</text>
 		<text id="save.default" h="BE686B14">Aplicación predeterminada para los archivos PD&amp;F</text>
 		<text id="save.g1.title" h="D16859B7">Opciones de guardado</text>
@@ -929,9 +946,9 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="save.l.example" h="1F37513E">Ejemplo:</text>
 		<text id="save.l.exists" h="91940E79">Si el archivo &amp;ya existe:</text>
 		<text id="save.l.file" h="13B32EA0">&amp;Nombre del archivo:</text>
+		<text id="save.l.params" h="4C3CFCB9">Parámetr&amp;os:</text>
 		<text id="save.l.path" h="E62EE9C8">&amp;Ruta al archivo:</text>
 		<text id="save.l.start" h="96A7DBF6">&amp;Iniciar desde:</text>
-		<text id="save.l.params" h="4C3CFCB9">Parámetr&amp;os:</text>
 		<text id="save.run" h="44C73A89">Ejecutar este &amp;programa tras la impresión</text>
 		<text id="save.show.saveAs" h="E15C50B5">&amp;Mostrar el diálogo 'Guardar como...'</text>
 		<text id="save.strip" h="F76AC075">&amp;Quitar la ruta del nombre del documento</text>
@@ -952,10 +969,10 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="sec.l.printing" h="603A3C89">I&amp;mpresión del documento:</text>
 		<text id="sec.l.userPass" h="F37B341A">Contraseña:</text>
 		<text id="sec.meta" h="D336DF65">Ci&amp;frar los metadatos del documento (compatible con Acobat 6.0 o posterior)</text>
+		<text id="sec.ownerPwd" h="CFDC25CE">Se requerirá una contraseña para &amp;cambiar los permisos o las contraseñas</text>
 		<text id="sec.timestamp" h="C75027C6">Usar s&amp;ervidor de fecha y hora:</text>
 		<text id="sec.tsa.manage" h="083DA21D">Gestionar...</text>
 		<text id="sec.userPwd" h="8245E2E7">Se requerirá una contraseña para &amp;abrir el documento</text>
-		<text id="sec.ownerPwd" h="CFDC25CE">Se requerirá una contraseña para &amp;cambiar los permisos o las contraseñas</text>
 		<text id="settings.btn.manage" h="083DA21D">Gestionar...</text>
 		<text id="settings.l.mode" h="71941FD8">&amp;Modalidad del controlador:</text>
 		<text id="settings.l.profile" h="235B6AC4">Perfil:</text>
@@ -980,9 +997,9 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="we.l.height" h="EF61EFBD">Alto:</text>
 		<text id="we.l.hoffset" h="49A48A03">Posición horizontal:</text>
 		<text id="we.l.name" h="2639BB67">Nombre de la &amp;marca:</text>
+		<text id="we.l.of" h="253BE8A3">(de %1)</text>
 		<text id="we.l.opacity" h="F862D017">&amp;Opacidad:</text>
 		<text id="we.l.page" h="660A3F38">Página:</text>
-		<text id="we.l.of" h="253BE8A3">(de %1)</text>
 		<text id="we.l.placeon" h="27B3C8C6">Colocar en:</text>
 		<text id="we.l.rotation" h="4667EEF3">&amp;Rotación::</text>
 		<text id="we.l.size" h="E1908ECB">Tamaño:</text>
@@ -996,14 +1013,15 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - ALL RIGHTS RESERVED.</tex
 		<text id="we.transColor" h="AC5903C6">Color transparente:</text>
 		<text id="wtm.enable" h="E36FC80F">Habilitar la impresión de las marcas de agua</text>
 		<text id="wtm.list.cue" h="F89305B7">No se ha definido ninguna marca de agua</text>
-		<text id="prof.l.info" h="D5319E61">Información del perfil</text>
-		<text id="prof.l.name" h="09FAD31D">&amp;Nombre:</text>
-		<text id="prof.l.comment" h="D41C404F">Co&amp;mentario:</text>
-		<text id="prof.manage.g1" h="C71AA825">Perfiles disponibles</text>
-		<text id="custhf.l.left" h="192F6142">Sección izquierda:</text>
-		<text id="custhf.l.center" h="C0678ECB">Sección central:</text>
-		<text id="custhf.l.right" h="3CB13D9F">Sección derecha:</text>
-		<text id="dlg.AddMode.app" h="D2DF7469">Nombre de la aplicación o programa:</text>
-		<text id="dlg.AddMode.mode" h="25328698">Modo de controlador para esta aplicación:</text>
+		<text id="cpk.standard" h="C6DA1F99">Normal</text>
+		<text id="cpk.picker" h="C3D0CECD">Cuentagotas</text>
+		<text id="cpk.lb.newColor" h="A18779D5">nuevo</text>
+		<text id="cpk.lb.curColor" h="67F0C28A">actual</text>
+		<text id="cpk.lb.custColors" h="D6D70925">Colores personalizados</text>
+		<text id="cpk.lb.hex" h="B04EA655">He&amp;x:</text>
+		<text id="cpk.btn.ok" h="FEF0C771">&amp;Aceptar</text>
+		<text id="cpk.btn.reset" h="3FEA2288">R&amp;staurar</text>
+		<text id="cpk.btn.cancel" h="BD2292C2">Ca&amp;ncelar</text>
+		<text id="cpk.moreColors" h="0AF32AE2">Más colores</text>
 	</Strings>
 </Localization>

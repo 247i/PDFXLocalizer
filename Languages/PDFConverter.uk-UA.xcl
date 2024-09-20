@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123215822">2.00.00</Version>
+	<Version date="20231212200645">2.00.00</Version>
 	<Author></Author>
 	<Copyright></Copyright>
 	<Product id="PDFXEditor"/>
 	<Language eName="Ukrainian (Ukraine)" lName="Українська" code="uk-UA" R2L="false"/>
-	<Module name="PDFConverter" namespace="pdfconv" version="7.0.323.3"/>
+	<Module name="PDFConverter" namespace="pdfconv" version="10.2.0.384"/>
 	<Strings>
-		<text id="DT" h="68CCD7A1">Роздільники десяткового дробу і тисяч</text>
+		<text id="AddLang" h="CE4DDC96">Додати мову...</text>
+		<text id="DT" h="99A777DC">Налаштування роздільників десяткового дробу і тисяч:</text>
 		<text id="Decimal" h="97B538F3">Десяткового дробу:</text>
+		<text id="DetectTable" h="8EFAF45F">Виявлення таблиць </text>
 		<text id="Fonts" h="09BC9E47">Шрифти:</text>
+		<text id="HasOCR" h="96B8D96E">Для цієї мови є модулі OCR.</text>
+		<text id="Language" h="E5AFBDFE">Мова:</text>
+		<text id="LayoutSettings" h="0EB6BCF7">Налаштування макету</text>
 		<text id="NoPermission" h="F6BEA48A">Документ захищений і Ви не маєте прав для його перетворення.</text>
+		<text id="PageLayout" h="2E7FA6E9">Зберегти: макет стор.</text>
+		<text id="Sheets" h="0E4A84A5">Створити аркуш</text>
+		<text id="TextFlow" h="D5276DB5">перехід тексту</text>
 		<text id="cmd.name.P" h="FE79EAE9">Експорт в презентацію Microsoft PowerPoint...</text>
 		<text id="cmd.name.Sel.P" h="10B9EA70">Експорт вибраного в презентацію Microsoft PowerPoint...</text>
 		<text id="cmd.name.Sel.W" h="F60B7012">Експорт вибраного в документ Microsoft Word...</text>
@@ -31,17 +39,28 @@
 		<text id="convertation.DecimalThousandsError" h="9002FE5E">Роздільники десяткового дробу і тисяч повинні бути різні</text>
 		<text id="convertation.Error1" h="388D83B4">В процесі перетворення документа трапилась критична помилка:</text>
 		<text id="convertation.Error2" h="A394ADBC">Неможливо зберегти результат.</text>
+		<text id="convertation.ProWarning" h="64B1DA0A">Ви можете використовувати цю функцію лише в режимі оцінки, інакше позначки &lt;b&gt;DEMO&lt;/b&gt; будуть розміщені на всіх сторінках файлу результатів. Крім того, файл результатів буде захищено паролем від редагування. Щоб уникнути всього цього - &lt;a=1=""&gt;надайте новий дійсний ключ&lt;/a&gt;. Перегляньте &lt;a=3=""&gt;довідку&lt;/a&gt; або відвідайте наш &lt;a=2=""&gt;веб-сайт&lt;/a&gt;, щоб отримати докладнішу інформацію.
+
+Ви впевнені, що бажаєте продовжити та використовувати цю функцію?</text>
 		<text id="convertation.ThousandsError" h="1660BD37">Неправильний роздільник для тисяч</text>
 		<text id="dpi" h="B39AC2C1">dpi</text>
 		<text id="elseUseRegional" h="8F1D3748">* Автоматично буде вибрано регіональні налаштування</text>
 		<text id="excel.filter" h="D766664D">MS Excel</text>
-		<text id="newRowRul" h="4CD45F3D">Новий рядок на листі для кожного:</text>
+		<text id="getOCRLang" h="4275388E">Деякі буквенні символи в документі слід розпізнати за допомогою OCR. Вкажіть, будь ласка, мову тексту для правильного розпізнавання:</text>
+		<text id="newRowRul" h="4CD45F3D">Новий рядок на аркуші для кожного:</text>
 		<text id="options" h="DAD7B4F4">Параметри</text>
+		<text id="options.IBOcrFontsGlyphs" h="BB134F07">Деякі документи PDF містять шрифти з недійсним кодуванням символів. Коли ці документи перетворюються у формати MS Office, вони можуть містити спотворений текст. Неможливо вставити такі шрифти безпосередньо у вихідні файли. Якщо Ви зіткнулися з цією проблемою, Ви можете вибрати цей параметр і використовувати механізм OCR для оптичного розпізнавання символів. Це має допомогти отримати правильний текст у вихідних файлах.
+
+Примітка: Не використовуйте цей параметр у випадках, коли немає проблем із текстом у вихідних файлах.</text>
 		<text id="options.compress.0" h="378201C4">PNG</text>
 		<text id="options.compress.1" h="25090095">JPG</text>
 		<text id="options.dpilevel" h="4D4FE579">%1 dpi</text>
 		<text id="options.fontsembedmode.0" h="4FD6EAB9">Вбудувати тільки ті шрифти, які вбудовані в PDF документ</text>
 		<text id="options.fontsembedmode.1" h="485361C4">Не вбудований</text>
+		<text id="options.newRow.0" h="9CF38C36">Абзац</text>
+		<text id="options.newRow.1" h="6D45691D">Лінія</text>
+		<text id="options.newSheet.0" h="42E9E100">для кожної сторінки</text>
+		<text id="options.newSheet.1" h="FB4125FF">лише одна для документа</text>
 		<text id="options.quality.0" h="8415F85F">Мінімальна</text>
 		<text id="options.quality.1" h="845E3D8C">Низька</text>
 		<text id="options.quality.2" h="91153342">Середня</text>
@@ -50,15 +69,16 @@
 		<text id="options.textmode.0" h="77B1E837">Зберегти текст доступним для редагування</text>
 		<text id="options.textmode.1" h="8419D7CE">Перетворити в криві</text>
 		<text id="options.textmode.2" h="60E91945">Перетворити в зображення</text>
-		<text id="options.newRow.0" h="9CF38C36">Абзац</text>
-		<text id="options.newRow.1" h="6D45691D">Лінія</text>
 		<text id="optionsCBAllowCurves" h="976099D8">Дозволити перетворення проблемного тексту в криві</text>
 		<text id="optionsCBAllowSubstitution" h="169F5988">Дозволити підстановку для невбудованих шрифтів</text>
 		<text id="optionsCBEmbedFont" h="3E50224C">Вбудувати всі шрифти</text>
 		<text id="optionsCBIncludeComments" h="B08E5CA8">Включати коментарі</text>
 		<text id="optionsCBIncludeImages" h="969B2F6C">Включати зображення</text>
 		<text id="optionsCBIncludeLinks" h="F5F4CED4">Включати посилання</text>
+		<text id="optionsCBOcrFontsGlyphs" h="6DCBFDE4">OCR текст для виправлення у вихідних файлах.</text>
 		<text id="optionsCBPageToImage" h="0707FDB4">Перетворити сторінку повністю в зображення</text>
+		<text id="optionsCBShowInvisibleText" h="68D10624">Зробити видимим весь невидимий текст </text>
+		<text id="optionsCBTablesDetect" h="A594BBA0">Виявлення таблиць</text>
 		<text id="optionsGBCommonOpt" h="5B3B421B">Загальні налаштування</text>
 		<text id="optionsGBTextOpt" h="D7BD8320">Параметри перетворення тексту</text>
 		<text id="optionsIBTextRaster" h="699A1B72">Текст буде растеризовано, якщо його неможливо буде ковертувати з наведеними параметрами.</text>
@@ -72,9 +92,9 @@
 		<text id="optionsLBdpiCompression" h="4CA3E32A">Ви можете налаштувати якість растреризації для неперетворюваних об’єктів (напр, зі складним градієнтом) чи для цілої сторінки, для якої попередній варіант не вказаний:</text>
 		<text id="optionsLBlastHope" h="F73DC603">*Якщо текст не вдасться перетворити в криві, його буде перетворено в зображення.</text>
 		<text id="powerpoint.filter" h="9FB63544">Презентація MS PowerPoint</text>
-		<text id="regionalDT" h="929F7393">Роздільник як у регіональних налаштуваннях</text>
+		<text id="regionalDT" h="FB22F59E">Роздільник як у регіональних налаштуваннях</text>
 		<text id="thousands" h="256655C5">Тисяч:</text>
-		<text id="userDefinedDT" h="CFDC144E">Задати власний роздільник</text>
+		<text id="userDefinedDT" h="7EA9F301">Нестандартний роздільник десяткового дробу і тисяч</text>
 		<text id="word.filter" h="6BB79C71">Документ MS Word</text>
 	</Strings>
 </Localization>

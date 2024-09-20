@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123230436">2.00.00</Version>
+	<Version date="20231212202456">2.00.00</Version>
 	<Author></Author>
 	<Copyright></Copyright>
 	<Product id="PDFXDriver"/>
 	<Language eName="Ukrainian (Ukraine)" lName="Українська" code="uk-UA" R2L="false"/>
-	<Module name="pdfSaver" namespace="saver" version="7.0.323.3"/>
+	<Module name="pdfSaver" namespace="saver" version="10.2.0.384"/>
 	<Strings>
 		<text id="about.version" h="2558B135">Версія: %1</text>
 		<text id="btn.help" h="2C29CD29">Довідка...</text>
@@ -25,6 +25,7 @@
 		<text id="errDlg.header" h="E8A076C8">Не вдалось зберегти &lt;b&gt;%1&lt;/b&gt;.</text>
 		<text id="errDlg.text" h="3FD6CA0D">Помилка при збереженні документа в файл:
 &lt;b&gt;%1&lt;/b&gt;</text>
+		<text id="errDlg.text2" h="4E388C6D">Документ не можна додати через існуючий захист документа (%1).</text>
 		<text id="filter.all" h="A1868C9F">Всі файли</text>
 		<text id="filter.pdf" h="21DC74BD">PDF документи  (*.pdf)</text>
 		<text id="l.sec" h="68B35B56">секунд</text>
@@ -48,8 +49,8 @@
 Відмінити операцію і завершити роботу</text>
 		<text id="overwrite.over" h="13CC8739">Перезаписати
 Перезаписати даний файл</text>
-		<text id="overwrite.prepend" h="7703513C">Вставити перед
-Об’єднати з даним файлом</text>
+		<text id="overwrite.prepend" h="9BD19348">Вставити перед
+Об’єднати з наявним файлом</text>
 		<text id="overwrite.select" h="60AA7DB4">Вибір іншого файла
 Виберіть інше ім’я файла для нового документа</text>
 		<text id="progress.done" h="F14B47CB">Зроблено %1%%</text>
@@ -64,5 +65,12 @@
 		<text id="save.cb.email" h="93B339D4">Відправити електронною поштою створений PDF файл</text>
 		<text id="save.cb.run" h="B14F25C0">Запустити програму перегляду після збереження</text>
 		<text id="tryAgain" h="B119E265">Спробуйте ще раз</text>
+		<text id="pass.title" h="23DE88B2">Ввести пароль</text>
+		<text id="pass.header" h="28DF2139">Документ &lt;b&gt;%1&lt;/b&gt; захищено паролем.</text>
+		<text id="pass.user" h="8B04881C">Введіть дійсний пароль користувача чи власника документа:</text>
+		<text id="pass.owner" h="1BB59772">Введіть дійсний пароль &lt;b&gt;власника&lt;/b&gt; для документа:</text>
+		<text id="sec.protection" h="B7EE190B">Захист</text>
+		<text id="sec.xfa" h="483F0CC0">XFA</text>
+		<text id="sec.signature" h="D9728CE0">Підпис</text>
 	</Strings>
 </Localization>

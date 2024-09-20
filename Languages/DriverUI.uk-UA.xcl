@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20171024234257">2.00.00</Version>
+	<Version date="20230628235234">2.00.00</Version>
 	<Author></Author>
 	<Copyright></Copyright>
 	<Product id="PDFXDriver"/>
 	<Language eName="Ukrainian (Ukraine)" lName="Українська" code="uk-UA" R2L="false"/>
-	<Module name="DriverUI" namespace="" version="6.0.322.7"/>
+	<Module name="DriverUI" namespace="" version="10.0.1.371"/>
 	<Strings>
 		<text id="btn.ok" h="FEF0C771">Так</text>
 		<text id="btn.cancel" h="3D302A38">Відміна</text>
@@ -122,11 +122,17 @@
 		<text id="driver.mode.xps" h="45B97450">XPS</text>
 		<text id="rules.column.app" h="66E8E89C">Програма</text>
 		<text id="rules.column.mode" h="97850036">Режим драйвера</text>
+		<text id="btn.configMode.tooltip" h="59D88CB9">Задати конфігурацію правил Режиму драйвера</text>
 		<text id="profile.default.title" h="67249AEE">Задані налаштування</text>
 		<text id="profile.default.desc" h="C63AA327">Задані налаштування драйвера</text>
 		<text id="profile.filter" h="1D42128D">PDF-XChange Printer Profile (*.pxpp)</text>
 		<text id="profile.title" h="0295B9AE">Вибрати профайл</text>
 		<text id="profile.newName" h="5A67CE17">Новий профайл</text>
+		<text id="btn.manage.tooltip" h="02E97817">Редагувати список доступних профілів.</text>
+		<text id="btn.add.tooltip" h="3EEBE19F">Створити новий профіль з поточними налаштуваннями</text>
+		<text id="btn.save.tooltip" h="EB7F125C">Зберегти дані налаштування в профіль</text>
+		<text id="tip.settings.modified" h="AFEF528F">Ваші поточні налаштування були змінені після застосування профілю.
+Щоб зберегти свої налаштування в профілі, натисніть кнопку "Зберегти" або "Створити"</text>
 		<text id="product.ID" h="0F1AA23D">Ідентифікатор: %1</text>
 		<text id="licence.type" h="02FA2D70">Тип ліцензії: %1</text>
 		<text id="paper.group.ISO" h="79F157DD">ISO</text>
@@ -164,7 +170,7 @@
 		<text id="langsList.column.name" h="F479395C">Стандартне ім'я</text>
 		<text id="langsList.column.locName" h="45A2C755">Локальне ім'я</text>
 		<text id="langs.Default" h="A50C20C9">Англійська (США), вбудована</text>
-		<text id="langs.Auto" h="343D08C2">Використовувати регіональні налаштування</text>
+		<text id="langs.Auto" h="EB653CD4">Використовувати мову Microsoft Windows</text>
 		<text id="compr.auto" h="471FE15D">Автоматично</text>
 		<text id="compr.zip" h="D460493A">Flate</text>
 		<text id="compr.jpeg" h="58DE58E0">JPEG</text>
@@ -178,7 +184,7 @@
 		<text id="compr.jbig2" h="DE3BC257">JBIG 2</text>
 		<text id="compr.jbig2.std" h="C6DA1F99">Стандарт</text>
 		<text id="compr.jbig2.crop" h="089616A4">Обрізати краї</text>
-		<text id="compr.jbig2.symbol" h="F60560F2">Символьний стиск</text>
+		<text id="compr.jbig2.symbol" h="8EB3D116">Символьний стиск (без втрат)</text>
 		<text id="conv.none" h="B58BD00F">Без перетворення</text>
 		<text id="conv.gray" h="AB87F2BA">Перетворити в сіре зображення</text>
 		<text id="conv.mono" h="CBA1AA37">Перетворити в монохромне зображення </text>
@@ -381,16 +387,105 @@
 		<text id="digisig.certify.DocMDP1" h="B15220D4">Зміни заборонено</text>
 		<text id="digisig.certify.DocMDP2" h="550E66E3">Дозволити заповнення полів, підпис та створення шаблонів сторінок</text>
 		<text id="digisig.certify.DocMDP3" h="1BFCB157">Дозволити заповнення полів, підпис, коментування та створення шаблонів сторінок</text>
+		<text id="digisig.format.pkcs7" h="D3C0DF54">PKCS#7 - Відокремлено</text>
+		<text id="digisig.format.cades" h="C17C6AFB">CAdES</text>
 		<text id="sign.by" h="CFEFFC81">%1</text>
+		<text id="dlg.lic.l1" h="D7BC993E">Установлені ліцензії:</text>
+		<text id="dlg.lic.btn.addKey" h="0F0F4E82">Додати нову ліценцію</text>
+		<text id="dlg.lic.title" h="43843004">Ліцензійні ключі</text>
+		<text id="lic.User" h="7E7E6177">Користувач</text>
+		<text id="lic.Email" h="EABC42C8">Електронна пошта</text>
+		<text id="lic.License" h="D06D20AC">Ліцензія</text>
+		<text id="lic.licNum" h="B97469F0">номер: %1</text>
+		<text id="lic.KeyData" h="835E068C">Дані ключа</text>
+		<text id="lic.daysLeftTip" h="949D0A02">ЗАЛИШИЛОСЯ ДНІВ ОБСЛУГОВУВАННЯ</text>
+		<text id="lic.key.expDate" h="CB67C29C">План обслуговування</text>
+		<text id="lic.key.expDateExp" h="6FBA08FE">термін обслуговування закінчився</text>
+		<text id="lic.key.expDateLeft" h="604D2189">%1 днів обслуговування залишилось</text>
+		<text id="lic.key.state" h="E2F3ED6A">Стан ключа</text>
+		<text id="lic.key.valid" h="A4519C22">Дійсний</text>
+		<text id="lic.key.expired" h="F6CD9EED">НЕДІЙСНИЙ</text>
+		<text id="lic.key.blocked" h="B99C4175">ЗАБЛОКОВАНО!</text>
+		<text id="lic.key.expiredPart" h="CC7B6389">ЧАСТКОВО НЕДІЙСНИЙ</text>
+		<text id="lic.key.renew" h="9E0CAE70">Поновити...</text>
+		<text id="lic.noSerialKeys" h="02AAA3DD">Жодної діцензії не проінстальовано...</text>
+		<text id="lic.msg.Title" h="43843004">Ліцензійні ключі</text>
+		<text id="lic.remSerial.Text" h="34FE2748">Бажаєте видалити вибраний ліцензійний ключ (-і)?
+Пам’ятайте, операцію відмінити буде неможоиво.</text>
+		<text id="lic.msg.remSerial.Hdr" h="A49A7771">Підтвердити видалення ліцензійного ключа(-ів).</text>
+		<text id="lic.msg.cpySerial.Text1" h="C7390EF4">Ліцензійний ключ (-і) скопійовано в Буфер обміну.</text>
+		<text id="lic.msg.cpySerial.Text2" h="24BBB950">Повний опис вибраних ліцензійних ключів було скопійовано в буфер обміну.</text>
+		<text id="lic.msg.addSerial.Hdr" h="ECE08EA4">Результат додавання нових ліцензійних ключів:</text>
+		<text id="lic.msg.addSerial.Text11" h="64C435DB">Ліцензійний ключ %1 було успішно додано до списку.</text>
+		<text id="lic.msg.addSerial.Text12" h="58D1D708">Ліцензійні ключі %1 було успішно додано до списку.</text>
+		<text id="lic.msg.addSerial.Text21" h="529FFB06">Ліцензійний ключ %1 було пропущено, оскільки він уже є в списку.</text>
+		<text id="lic.msg.addSerial.Text22" h="2DA01DFD">Ліцензійні ключі %1 було пропущено, оскільки вони вже є в списку.</text>
+		<text id="lic.msg.addSerial.Text31" h="569F1BFD">Ліцензійний ключ %1 було відфільтровано, оскільки він не підходить саме до цієї програми.</text>
+		<text id="lic.msg.addSerial.Text32" h="E59ABEEE">Ліцензійні ключі %1 було відфільтровано, оскільки вони не підходять до цієї програми.</text>
+		<text id="lic.msg.addSerial.Text41" h="73FF4C94">Ліцензійний ключ %1 було пропущено як неправильний.</text>
+		<text id="lic.msg.addSerial.Text42" h="CF2052FF">Ліцензійні ключі %1 було пропущено як неправильні.</text>
+		<text id="lic.msg.addSerialErr.Hdr" h="443BD774">Неможливо додати новий ліцензійний ключ.</text>
+		<text id="lic.msg.addSerialErr.Text1" h="9712BF06">Буфер обміну не містить дійсного ліцензійного ключа (-ів).</text>
+		<text id="lic.msg.activateErr.Hdr2" h="7134134A">Неправильні параметри активації.</text>
+		<text id="lic.msg.activateErr.noKey" h="914AF056">Вкажіть ключ активації.</text>
+		<text id="lic.msg.activateErr.invKey" h="AC0C8EFB">Будь ласка, вкажіть дійсний ключ активації.</text>
+		<text id="lic.msg.activateErr.noEmail" h="425602D2">Будь ласка, вкажіть Вашу електронну адресу. Це необхідно для процесу активації.</text>
+		<text id="lic.msg.activateErr.invEmail" h="87A6E4BF">Вказана електронна адреса записана неправильно.
+
+Бажаєте використовувати цю адресу при активації?</text>
+		<text id="lic.msg.activateErr.invEmail.tip" h="BD3014C1">Примітка. Якщо Ви неправильно вказали електронну адресу, Ви не зможете отримати ліцензійний ключ.</text>
+		<text id="lic.Error" h="51BFF51D">Помилка</text>
+		<text id="lic.Unknown2" h="769B45E0">&lt;Не вказано&gt;</text>
+		<text id="lic.msg.activateErr.Hdr" h="7660B951">Неможливо застосувати Ваш ключ активації.</text>
+		<text id="lic.msg.activateErr.Text1" h="82B43AB0">Причина:
+
+%1
+
+Також Вы можете зайти на &lt;a id="1"&gt;Веб-сторінку&lt;/a&gt;, щоб оновити свій ключ вручну, чи звернутися в службу &lt;a id="2"&gt;Підтримки&lt;/a&gt;, чи зайти на нашу онлайн-сторінку &lt;a id = "3"&gt;База знань&lt;/a&gt; і отримати додаткову інформацію ...</text>
+		<text id="lic.msg.upgradeSerialErr.Hdr" h="E3C03B87">Неможливо оновити Вашу ліцензію.</text>
+		<text id="lic.msg.upgradeSerialErr.Text" h="32DC2043">Причина:
+
+%1
+
+Також Вы можете зайти на &lt;a id="1"&gt;Веб-сторінку&lt;/a&gt;, щоб оновити свій ключ вручну, чи звернутися в службу &lt;a id="2"&gt;Підтримки&lt;/a&gt;, чи зайти на нашу онлайн-сторінку &lt;a id = "3"&gt;База знань&lt;/a&gt; і отримати додаткову інформацію ...</text>
+		<text id="lic.Retry" h="82619C32">Повторити</text>
+		<text id="lic.Cancel" h="3D302A38">Відмінити</text>
+		<text id="lic.Close" h="6298A5AF">Закрити</text>
+		<text id="lic.bnt.yes" h="EDFA42B4">Так, оновити зараз!</text>
+		<text id="lic.bnt.later" h="BCDE8358">Не зараз, запитайте мене при наступному запуску</text>
+		<text id="lic.bnt.no" h="E1CC0F76">Ні, і не запитувати надалі</text>
+		<text id="lic.request.header" h="996E7CF5">Будь ласка, поновіть Ваш ліцензійний ключ.</text>
+		<text id="lic.msg.request" h="42CC8ECA">Для цієї версії програми потрібно новий формат ліцензійного ключа. 
+Оновить ключ можна онлайн. Бажаєте зробити це зараз (при наявному підключенні до інтернету)?
+Також Вы можете зайти на &lt;a id="1"&gt;Веб-сторінку&lt;/a&gt;, щоб оновити свій ключ вручну, чи звернутися в службу &lt;a id="2"&gt;Підтримки&lt;/a&gt;, чи зайти на нашу онлайн-сторінку &lt;a id = "3"&gt;База знань&lt;/a&gt; і отримати додаткову інформацію ...
+		</text>
+		<text id="lic.request_note" h="AD21560C">Примітка: доки Ви не отримаєте та не застосуєте новий ліцензійний ключ - Ви можете використовувати програму тільки в режимі "БЕЗКОШТОВНО" або в режимі оцінювання.</text>
+		<text id="lic.actDlg.title" h="347123F6">Активувати</text>
+		<text id="lic.actDlg.header" h="06854D52">Введіть Ваше ім’я і правильну ел. адресу.</text>
+		<text id="lic.actDlg.msg" h="90B85877">Будь ласка, переконайтесь, що надана Вами електронна адреса є надійною і дійсною, оскільки всі майбутні оновлення та ліцензійні ключі будуть надіслані на цю адресу! Після успішної активації ліцензійного ключа програма автоматично оновить Вашу систему.</text>
+		<text id="lic.actDlg.name" h="2F83636A">Ваше ім’я:</text>
+		<text id="lic.actDlg.email" h="6DC91F37">Ваша ел. адреса:</text>
+		<text id="lic.actDlg.key" h="100602A5">Ключ ліценції:</text>
+		<text id="lic.actDlg.btn.Activate" h="83914F23">Активувати</text>
+		<text id="lic.addKeyDlg.title" h="EB4CA58B">Додати новий серійний/ліцензійний ключ</text>
+		<text id="lic.addKeyDlg.tip" h="A75F4604">Будь ласка, помістіть новий ключ активації ліцензії в подане нижче текстове поле:</text>
+		<text id="lic.addKeyDlg.btn.Paste" h="E7F59864">Скопіювати ключ з Буферу обміну</text>
+		<text id="lic.addKeyDlg.btn.Continue" h="B72C4E18">Продовжити...</text>
+		<text id="lic.msg.addSerialErr.Text2" h="E821568E">Ви не вказали дійсні ліцензійні ключі.</text>
+		<text id="lic.key.subscription.title" h="1EC9C51B">(Підписка)</text>
+		<text id="lic.key.subscription.tip" h="F7F2FF8D">ЗАЛИШИЛИСЯ ДНІ ПІДПИСКИ</text>
+		<text id="lic.key.subscription.left" h="8771F78E">Залишилось %1 днів підписки</text>
+		<text id="lic.key.subscription.expired" h="5111B0B3">термін дії підписки закінчився</text>
+		<text id="lic.key.subscription.notActive" h="48AF704F">Ключ підписки ще не активований</text>
 		<text id="msg.SMTP.NoServer" h="0141A9D3">Ім’я SMPT сервера повинно бути чітко визначеним.</text>
 		<text id="msg.SMTP.Remove" h="468A2A4A">Ви дійсно бажаєте видалити налаштування для вибраного SMPT сервера?</text>
 		<text id="msg.custom.form.delete" h="D5818ABF">Ви дійсно бажаєте знищити цю користувацьку форму?</text>
 		<text id="msg.custom.form.noDelete" h="96F67D4A">Ви не можете змінити або видалити користувацьку форму, визначену Вашим адміністратором для цього комп’ютера.</text>
 		<text id="msg.custom.form.noName" h="F0231E7A">Ви повинні вказати ім’я для вашої форми.</text>
 		<text id="msg.custom.form.noUnique" h="D3086CF3">Назва користувацької форми має бути унікальною.</text>
-		<text id="msg.wtm.noTitle" h="D3FF2D2C">Поле з назвою водяного знаку не може бути порожнім!</text>
-		<text id="msg.wtm.invName" h="80BBCEBB">Назва водяного знаку не може містити символ (;).</text>
-		<text id="msg.wtm.uniqueTitle" h="4EB400B7">Назва водяного знаку має бути унікальною!</text>
+		<text id="msg.wtm.noTitle" h="E85415C3">Поле з назвою водяного знаку не може бути порожнє!</text>
+		<text id="msg.wtm.invName" h="FFE6E784">Назва водяного знаку не може містити символ (;).</text>
+		<text id="msg.wtm.uniqueTitle" h="ECA89E0F">Назва водяного знаку має бути унікальною!</text>
 		<text id="msg.wtm.delete" h="18BD3007">Ви дійсно бажаєте знищити цей водяний знак?</text>
 		<text id="msg.wtm.text" h="03F9D16D">Ви повинні визначити текст для водяного знаку.</text>
 		<text id="msg.wtm.image" h="96AAFCDF">Ви повинні вказати шлях до файлу із зобарженням і ім’я водяного знаку.</text>
@@ -515,6 +610,10 @@
 		<text id="cmd.profile.import.tip" h="C1B5CBD1">Імпортувати профайл з файла</text>
 		<text id="cmd.profile.export" h="02819881">Експортувати...</text>
 		<text id="cmd.profile.export.tip" h="8D4C4AE3">Експортувати виділений профайл</text>
+		<text id="cmd.help.help" h="1DDADC82">Допомога</text>
+		<text id="cmd.help.home" h="09F653F5">Головна</text>
+		<text id="cmd.help.support" h="FA313F31">Форум підтримки</text>
+		<text id="cmd.help.checkForUpdates" h="B4EF7EF3">Перевірити наявність оновлень</text>
 		<text id="page.paper.name" h="4079C816">Сторінка</text>
 		<text id="page.paper.title" h="BD068256">Параметри сторінки</text>
 		<text id="page.customForm.name" h="4902546D">Індивідуальні форми</text>
@@ -551,22 +650,23 @@
 		<text id="page.optimization.title" h="638FC2A7">Налаштування оптимізації</text>
 		<text id="page.languages.name" h="C41449B2">Мови</text>
 		<text id="page.languages.title" h="D5C43A44">Вибір мови для інтерфейсу</text>
-		<text id="about.copyright" h="959E18E0">Право власності &lt;a=1&gt;Tracker Software Products (Canada) Ltd,&lt;/a&gt;
+		<text id="about.copyright" h="82C6BF79">Право власності © 2001-23 by &lt;a=1&gt;Tracker Software Products (Canada) Ltd&lt;/a&gt;, PDF-XChange Co Ltd.
 PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права застрежено.</text>
-		<text id="about.credits" h="28592C00">Усі інші торгівельні марки / авторські права підтверджені та належать таким власникам:
+		<text id="about.credits" h="5131C284">PDF-XChange є зареєстрованою торгівельною маркою PDF-XChange Co Ltd.
+Усі інші торгівельні марки / авторські права підтверджені та належать таким власникам:
 •     Zlib by Mark Adler &amp; Jean-Loup Gailly,
 •     Little CMS by Marti Maria and IPG © 1991-98.
-•     Freetype2 by David Turner, Robert Wilhelm, &amp; Werner Lemberg © 1996-2001, 2006
-•     Tesseract OCR Engine. Originally developed at Hewlett Packard Laboratories Bristol and at Hewlett-Packard Co, Greeley Colorado,
-       весь код у цьому дистрибутиві тепер ліцензовано відповідно до ліцензії Apache.</text>
+•     Freetype2 by David Turner, Robert Wilhelm, &amp; Werner Lemberg © 1996-2001, 2006</text>
 		<text id="about.help" h="6887DFB0">Допомога...</text>
 		<text id="about.reg" h="05BF124F">Реєстрація...</text>
 		<text id="about.version" h="52344715">Версія: &lt;b&gt;%1&lt;/b&gt; (Збірка &lt;b&gt;%2&lt;/b&gt;)%3%4</text>
 		<text id="above" h="09C2601E">для зображень чіткіших ніж:</text>
+		<text id="bk.Level" h="AEA169E8">Рівень:</text>
 		<text id="bk.asTitle" h="513216FA">Використовувати заголовок документа як кореневу закладку</text>
 		<text id="bk.disp.color" h="02977B17">Колір</text>
 		<text id="bk.disp.state" h="EE1B645B">Стан:</text>
 		<text id="bk.disp.style" h="AEC0CE33">Стиль:</text>
+		<text id="bk.dispMode" h="5CA46335">Режим відображення:</text>
 		<text id="bk.enable" h="F09B2FCA">Дозволити автоматичне розпізнавання структури документа</text>
 		<text id="bk.g.title" h="1492312B">Параметри розпізнавання структури документа</text>
 		<text id="bk.g1.title" h="1366B304">Шаблон</text>
@@ -583,6 +683,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="btn.browse2" h="FF1DC93F">Проглянути...</text>
 		<text id="btn.browse3" h="0BAC1EBD">Проглянути...</text>
 		<text id="btn.edit" h="26BB263A">Редагувати...</text>
+		<text id="btn.macro" h="A202F8D8">Макроси</text>
 		<text id="btn.new" h="F41C4AA5">Створити...</text>
 		<text id="btn.reset" h="E704BDE1">Відновити</text>
 		<text id="compr.cb.compr.ascii" h="2A016E94">ASCII формат (Більший файл)</text>
@@ -606,9 +707,14 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="custform.g2.title" h="3E43518D">Розміри форми користувача</text>
 		<text id="custform.g3.title" h="AA174316">Одиниці</text>
 		<text id="custform.l.width" h="B061B0AB">Ширина:</text>
+		<text id="custhf.l.center" h="C0678ECB">По центру:</text>
+		<text id="custhf.l.left" h="192F6142">Зліва:</text>
+		<text id="custhf.l.right" h="3CB13D9F">Справа:</text>
 		<text id="dlg.AddCustomForm" h="B88CFE3B">Додавання/редагування форми</text>
 		<text id="dlg.AddMode" h="CBEDEC17">Додавання/редагування режиму драйвера</text>
+		<text id="dlg.AddMode.app" h="D2DF7469">Програма</text>
 		<text id="dlg.AddMode.app.cue" h="696733B2">напр., winword.exe</text>
+		<text id="dlg.AddMode.mode" h="25328698">Режим драйвера для вказаної програми:</text>
 		<text id="dlg.AddWatermark" h="F5059D91">Додавання/редагування “водяного знаку”</text>
 		<text id="dlg.Customize" h="E3787BF8">Налаштування</text>
 		<text id="dlg.CustomizeHF" h="B562B8E4">Налаштувати...</text>
@@ -657,18 +763,23 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="ds.cb.logo" h="EB08AA01">Логотип на фоні</text>
 		<text id="ds.cb.name" h="63FE3EDE">Ім’я</text>
 		<text id="ds.cb.reason" h="11BD8A6E">Причина</text>
+		<text id="ds.cb.revocation" h="0DC12DF3">Включити статус відкликання підпису</text>
 		<text id="ds.cb.subject" h="8D5A19C4">Власник</text>
 		<text id="ds.create" h="BB3716B9">Створити...</text>
 		<text id="ds.g1.title" h="96999927">Цифровий сертифікат</text>
 		<text id="ds.g2.title" h="AEE125D6">Додатково</text>
 		<text id="ds.g4.title" h="EFFDDE78">Зовнішній вигляд</text>
+		<text id="ds.g5.title" h="0C13107E">Позиція:</text>
+		<text id="ds.g6.title" h="DAD7B4F4">Опції</text>
 		<text id="ds.img.cue" h="51846090">&lt;клацніть і виберіть графічний файл&gt;</text>
 		<text id="ds.l.contact" h="A8B0C056">Контактна інформація:</text>
+		<text id="ds.l.format" h="3E704C67">Формат підпису:</text>
 		<text id="ds.l.graphic" h="880A621F">Зображення:</text>
 		<text id="ds.l.height" h="EF61EFBD">Висота:</text>
 		<text id="ds.l.hoffset" h="DF4C107F">Гориз. зміщ.</text>
 		<text id="ds.l.issued" h="B245A018">Випущений для:</text>
 		<text id="ds.l.location" h="C9265ABC">Місцезнаходження</text>
+		<text id="ds.l.page" h="660A3F38">Сторінка:</text>
 		<text id="ds.l.perms" h="65731FF3">Дозволи:</text>
 		<text id="ds.l.reason" h="9BA10106">Причина підписання:</text>
 		<text id="ds.l.useFile" h="7EA982B8">Ім’я файла:</text>
@@ -682,8 +793,9 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="email.bcc" h="545EB298">Копія (bcc):</text>
 		<text id="email.cc" h="45106A78">Копія всім:</text>
 		<text id="email.content" h="64D3C808">Текст:</text>
-		<text id="email.enable" h="BA8783C7">Відправити створений документ електронною поштою</text>
+		<text id="email.enable" h="85311A1F">Відправити створений документ електронною поштою</text>
 		<text id="email.from" h="60652CC5">Від:</text>
+		<text id="email.method" h="6900EC9A">Метод:</text>
 		<text id="email.props" h="61B2B055">Властивості електронного повідомлення</text>
 		<text id="email.server" h="74EFFD0D">Сервер:</text>
 		<text id="email.smtp" h="28F504E2">Властивості SMTP</text>
@@ -728,6 +840,8 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="gen.resize" h="60879BE7">Змасштабувати вікно документу до розмірів першої сторінки</text>
 		<text id="graph.l.threshold" h="B2FADA6C">Поріг:</text>
 		<text id="graph.use.dither" h="3FA24F74">Застосувати дизерінг</text>
+		<text id="hf.customize1" h="B562B8E4">Налаштувати...</text>
+		<text id="hf.customize2" h="B562B8E4">Налаштувати...</text>
 		<text id="hf.enable" h="C8410A02">Додати колонтитули на сторінки документа</text>
 		<text id="hf.foot" h="ECBC4A48">Нижній:</text>
 		<text id="hf.g1.title" h="5244D472">Колонтитули</text>
@@ -740,9 +854,17 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="hf.l.right" h="C896EA9F">Справа:</text>
 		<text id="hf.l.top" h="DBE4B23E">Зверху:</text>
 		<text id="hf.units" h="A29BF002">Одиниці:</text>
+		<text id="lang.btn.asDefault" h="DFA4AF2F">Задати</text>
+		<text id="lang.l.more" h="2E2CCD84">&lt;a=1&gt;Інші мови...&lt;/a&gt;</text>
+		<text id="lang.l.select" h="8E26C53F">Виберіть мову для інтерфейсу</text>
+		<text id="links.border.color" h="20E74546">Колір рамки:</text>
+		<text id="links.border.style" h="8CB0F062">Стиль рамки:</text>
+		<text id="links.border.type" h="F1E3B439">Тип рамки:</text>
+		<text id="links.border.width" h="A7B7BD94">Товщина рамки:</text>
 		<text id="links.check" h="572D738F">Перевіряти наявність файлів при створенні посилань</text>
 		<text id="links.detect" h="BADAE078">Розпізнавати імена файлів і перетворювати їх на PDF-посилання</text>
-		<text id="links.enable" h="88E82DA8">Розпізнавати URL в створюваному документі</text>
+		<text id="links.enable" h="E514ECEA">Розпізнавати URL в друкованому тексті</text>
+		<text id="links.l.example" h="1F37513E">Приклад:</text>
 		<text id="links.local" h="8C690B8E">Локальні файли</text>
 		<text id="links.options" h="4A56A155">Параметри посилань</text>
 		<text id="mail.smtp" h="E2F8F5FC">SMTP сервер</text>
@@ -754,6 +876,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="mail.smtp.serverName" h="BD084E34">Ім’я сервера:</text>
 		<text id="mail.smtp.serverNameCue" h="BE98874E">Приклад: smtp.example.com</text>
 		<text id="mail.smtp.userName" h="6901D750">Ім'я користувача:</text>
+		<text id="opt.g1" h="DAD7B4F4">Варіанти</text>
 		<text id="opt.grayAsRGB" h="BE6DCABB">Записати зображення з палітрою сірого в зображення з палітрою RGB </text>
 		<text id="opt.l.blend" h="5C764562">Спосіб змішування:</text>
 		<text id="opt.l.detess" h="04F08091">Спосіб де-тесселяції:</text>
@@ -777,7 +900,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="over.repeat.cont" h="7A290673">Циклічно повторювати коротший накладений файл</text>
 		<text id="over.repeat.last" h="B744CD52">Повторювати останню сторінку коротшого накладеного файла</text>
 		<text id="over.repeat.none" h="6361EAE7">Не повторювати</text>
-		<text id="papList.label" h="5BB50205">Доступні індивідуальні форми</text>
+		<text id="papList.label" h="A6F335A5">Доступні індивідуальні форми:</text>
 		<text id="paper.c.borders" h="872135AE">Друкувати межі сторінок:</text>
 		<text id="paper.cb.center" h="CBEFB4D0">По центру</text>
 		<text id="paper.cb.fit" h="9078F779">До розміру сторінки</text>
@@ -786,6 +909,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="paper.g2" h="6DD64EA1">Графіка</text>
 		<text id="paper.g3" h="A9BCB1A8">Розміщення</text>
 		<text id="paper.g4" h="D92FF225">Додаткові параметри друку</text>
+		<text id="paper.g5" h="070DE448">Вихідний формат</text>
 		<text id="paper.l.booklettype" h="E40660F9">Тип буклета:</text>
 		<text id="paper.l.gutter" h="453C4022">Розмір поля зшивки:</text>
 		<text id="paper.l.ltype" h="7E455932">Тип:</text>
@@ -794,6 +918,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="paper.l.orientation" h="F5C1FFB9">Розміщення:</text>
 		<text id="paper.l.pageOrder" h="4415E37B">Порядок сторінок:</text>
 		<text id="paper.l.position" h="C87B8489">Позиція:</text>
+		<text id="paper.l.resolution" h="4103E512">Роздільність:</text>
 		<text id="paper.l.scale" h="C4EC7E3C">Масштаб:</text>
 		<text id="paper.l.sheets" h="3C8E1D5A">Аркушів в зшитку:</text>
 		<text id="paper.l.sheetsize" h="A2557222">Розмір аркуша:</text>
@@ -806,10 +931,15 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="paper.rb.portrait" h="A9A67C11">Портрет</text>
 		<text id="paper.rb.standard" h="D724FB24">Стандарт:</text>
 		<text id="ppi" h="164A6A9C">точок на дюйм</text>
+		<text id="prof.l.comment" h="D41C404F">Коментарій:</text>
+		<text id="prof.l.info" h="D5319E61">Інформація про профіль</text>
+		<text id="prof.l.name" h="09FAD31D">Ім’я:</text>
+		<text id="prof.manage.g1" h="C71AA825">Доступні профілі</text>
 		<text id="prop.about" h="F2596574">Про</text>
 		<text id="prop.settings" h="9147CD71">Налаштування</text>
 		<text id="rb.inch" h="3D2782C6">Дюйми</text>
 		<text id="rb.mm" h="291025E5">Міліметри</text>
+		<text id="save.cb.lastUsed" h="07DD776B">Відкрити діалогове вікно в останній папці</text>
 		<text id="save.custom" h="A75E6832">Програма:</text>
 		<text id="save.default" h="BE686B14">Програма за замовчуванням для PDF файлів</text>
 		<text id="save.g1.title" h="D16859B7">Параметри запису</text>
@@ -818,9 +948,10 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="save.l.example" h="1F37513E">Приклад:</text>
 		<text id="save.l.exists" h="91940E79">Якщо файл існує:</text>
 		<text id="save.l.file" h="13B32EA0">Назва файла:</text>
+		<text id="save.l.params" h="4C3CFCB9">Параметри:</text>
 		<text id="save.l.path" h="E62EE9C8">Шлях:</text>
 		<text id="save.l.start" h="96A7DBF6">Почати з:</text>
-		<text id="save.run" h="44C73A89">Запустити програму по закінченню друку</text>
+		<text id="save.run" h="44C73A89">Запустити програму після завершення друкування</text>
 		<text id="save.show.saveAs" h="E15C50B5">Показувати діалог “Зберегти як...”</text>
 		<text id="save.strip" h="F76AC075">Забрати шлях з назви документу</text>
 		<text id="sec.access" h="A05670C9">Дозволити доступ до вмісту документа людям з вадами зору</text>
@@ -840,6 +971,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="sec.l.printing" h="603A3C89">Друк документа:</text>
 		<text id="sec.l.userPass" h="F37B341A">Пароль:</text>
 		<text id="sec.meta" h="D336DF65">Шифрувати метадані документа (сумісно з Acrobat 6.0 і новішим)</text>
+		<text id="sec.ownerPwd" h="CFDC25CE">Пароль, необхідний для зміни дозволів і/чи паролів:</text>
 		<text id="sec.timestamp" h="C75027C6">Сервер відмітки часу</text>
 		<text id="sec.tsa.manage" h="083DA21D">Налаштувати...</text>
 		<text id="sec.userPwd" h="8245E2E7">Для відкриття документа потрібен пароль:</text>
@@ -867,6 +999,7 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="we.l.height" h="EF61EFBD">Висота:</text>
 		<text id="we.l.hoffset" h="49A48A03">Зміщення по Х:</text>
 		<text id="we.l.name" h="2639BB67">Назва "водяного знаку":</text>
+		<text id="we.l.of" h="253BE8A3">(з %1)</text>
 		<text id="we.l.opacity" h="F862D017">Прозорість:</text>
 		<text id="we.l.page" h="660A3F38">Сторінка:</text>
 		<text id="we.l.placeon" h="27B3C8C6">Розміщений на:</text>
@@ -882,5 +1015,15 @@ PO Box 79, 9622 Chemainus Rd, Chemainus, BC. V0R 1K0 - Всі права зас�
 		<text id="we.transColor" h="AC5903C6">Прозорість</text>
 		<text id="wtm.enable" h="E36FC80F">Друкувати "водяні знаки"</text>
 		<text id="wtm.list.cue" h="F89305B7">"Водяні знаки" не вказані</text>
+		<text id="cpk.standard" h="C6DA1F99">Стандарт</text>
+		<text id="cpk.picker" h="C3D0CECD">Пікер</text>
+		<text id="cpk.lb.newColor" h="A18779D5">новий</text>
+		<text id="cpk.lb.curColor" h="67F0C28A">поточний</text>
+		<text id="cpk.lb.custColors" h="D6D70925">Власні кольори:</text>
+		<text id="cpk.lb.hex" h="B04EA655">Hex:</text>
+		<text id="cpk.btn.ok" h="FEF0C771">Так</text>
+		<text id="cpk.btn.reset" h="3FEA2288">Скинути</text>
+		<text id="cpk.btn.cancel" h="BD2292C2">Відмінити</text>
+		<text id="cpk.moreColors" h="0AF32AE2">Більше кольорів:</text>
 	</Strings>
 </Localization>

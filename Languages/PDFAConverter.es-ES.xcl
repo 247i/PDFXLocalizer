@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180627200921">2.00.00</Version>
+	<Version date="20230628235839">2.00.00</Version>
 	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXEditor"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="español" code="es-ES" R2L="false"/>
-	<Module name="PDFAConverter" namespace="pdfa" version="7.0.325.10"/>
+	<Module name="PDFAConverter" namespace="pdfa" version="10.0.1.371"/>
 	<Strings>
 		<text id="auto.pdfa.level" h="778FAC3D">Conformidad PDF/A automática</text>
 		<text id="conv.name" h="7A00CE23">PDF/A (*.pdf)</text>
@@ -24,9 +24,12 @@
 		<text id="dlg.rep.fixes" h="594F7931">Reparaciones (%1):</text>
 		<text id="dlg.rep.title" h="1DC94CC7">Informe de la conversión</text>
 		<text id="dlg.rep.warnings" h="6F8DAB37">Avisos (%1):</text>
+		<text id="dlg.rep.noerr" h="B62E288E">No hay errores</text>
+		<text id="dlg.rep.nowarn" h="9B75A61A">No hay avisos</text>
+		<text id="dlg.rep.nofix" h="CFBD7286">No hay reparaciones</text>
 		<text id="lbl.chooseStd" h="4CB6AFEB">Elija una norma:</text>
-		<text id="rasterize.error.chk" h="4433EF91">Trazar como dibujo las tipografías no incrustadas</text>
 		<text id="msg.err.alternate_presenatations" h="19A17FF2">El documento contiene presentaciones alternativas</text>
+		<text id="msg.err.dictsize" h="A051CB86">El tamaño del diccionario es más de 4095</text>
 		<text id="msg.err.embed_file_missing_key" h="B12243CC">Archivo incrustado: falta la clave %1</text>
 		<text id="msg.err.embed_file_no_AF" h="0D075E68">El archivo incrustado no tiene una entrada 'AF'</text>
 		<text id="msg.err.embed_file_no_AFRelationship" h="0F2FF281">El archivo incrustado no tiene una entrada de 'relación AF'</text>
@@ -34,8 +37,9 @@
 		<text id="msg.err.embed_file_no_ModDate" h="32393EC5">El archivo incrustado no tiene una entrada de fecha de modificación en el diccionario de parámetros</text>
 		<text id="msg.err.embed_file_not_PDF" h="ACB6C0B4">Algunos archivos incrustados no son archivos PDF</text>
 		<text id="msg.err.embed_file_not_PDFA_compliance" h="69851F66">Al menos uno de los documentos PDF incrustados no cumple con PDF/A</text>
+		<text id="msg.err.filespecification" h="E67D7D14">El documento contiene la especificación del archivo</text>
 		<text id="msg.err.font" h="E728DE31">La tipografía %1 no es válida: %2</text>
-		<text id="msg.err.invalidfontobject" h="D0411546">El objeto de tipografía no es válido</text>
+		<text id="msg.err.font_map_PUA" h="B32874EF">El texto está asignado al área de uso privado de Unicode y no hay actualmente ninguna etiqueta de texto</text>
 		<text id="msg.err.halftone_has_name" h="044A925B">Estado de gráficos ampliado: el semitono tiene nombre</text>
 		<text id="msg.err.image_bpc_more" h="63802D36">Los bits por componentes de la imagen superan %1</text>
 		<text id="msg.err.impl_limit_obj_size_more" h="3A9756F7">El objeto %1 tiene tamaño superior al %2</text>
@@ -49,17 +53,22 @@
 		<text id="msg.err.invalid.xform" h="735966B8">El documento contiene un formulario XForm que no es váildo</text>
 		<text id="msg.err.invalid_image" h="A275C999">La imagen no es válida</text>
 		<text id="msg.err.invalid_pattern" h="ADB9EF31">El patrón no es válido</text>
+		<text id="msg.err.invalidfontobject" h="D0411546">El objeto de tipografía no es válido</text>
 		<text id="msg.err.keys_not_UR3_DocMDP" h="33EEDCA6">Los permisos están usando claves que no son 'UR3' ni 'DocMDP'</text>
+		<text id="msg.err.layer_is_not_ocgs" h="192BDC6C">Esa capa no está en la lista de capas del documento</text>
 		<text id="msg.err.mbox.missing" h="529404DB">Falta el cuadro de imagen o 'MediaBox'</text>
 		<text id="msg.err.metadata_missing" h="52FA2A56">No hay metadatos</text>
 		<text id="msg.err.obj_validator_name_not_UTF8" h="FB949014">El nombre no es un texto UTF-8 válido</text>
+		<text id="msg.err.outlinetitle.missing" h="DDDF0A13">Falta el título del esquema</text>
 		<text id="msg.err.pageseparated" h="04FDB927">La página es una placa separada</text>
 		<text id="msg.err.preliminary.modify" h="413E0B86">Está prohibida la modificación del documento</text>
 		<text id="msg.err.preliminary.secured" h="1CA464FB">El documento está asegurado</text>
 		<text id="msg.err.preliminary.xfa" h="1B4F1FD1">El documento contiene un formulario XFA, por lo que no se puede grabar con la norma PDF/A</text>
-		<text id="msg.err.root.invalid.key" h="AB4A8812">El objeto raíz contiene una clave no válida</text>
-		<text id="msg.err.xfa" h="7CB7EB6A">No es posible la conversión, pues el documento contiene un formulario XFA</text>
 		<text id="msg.err.pressteps" h="1CBEE75B">La página tiene 'PreSteps'</text>
+		<text id="msg.err.realnumber.high" h="66E0E3DB">El número real es demasiado alto</text>
+		<text id="msg.err.realnumber.low" h="2A96B6D3">El número real es muy bajo</text>
+		<text id="msg.err.root.invalid.key" h="AB4A8812">El objeto raíz contiene una clave no válida</text>
+		<text id="msg.err.shouldbeEF" h="56220803">Un archivo conforme a la normativa PDF/A-4f debe contener una clave EmbeddedFiles en el diccionario de nombres</text>
 		<text id="msg.err.st_root_elem_type_not_standard" h="F26BDE8C">PDF estructurado: el elemento no usa un tipo normal</text>
 		<text id="msg.err.st_root_missing" h="7F7D9806">Falta el 'StructTreeRoot'</text>
 		<text id="msg.err.substitute_filter" h="50898016">%2 se ha reemplazado con %1</text>
@@ -74,13 +83,9 @@
 		<text id="msg.err.used_key" h="48336238">Se usa la clave %1</text>
 		<text id="msg.err.used_obj_transparency" h="A7E6E8BD">El objeto usa transparencia %1</text>
 		<text id="msg.err.used_scale_factor" h="341357C0">Se usa un factor de escala</text>
-		<text id="msg.err.layer_is_not_ocgs" h="192BDC6C">Esa capa no está en la lista de capas del documento</text>
-		<text id="msg.err.realnumber.high" h="66E0E3DB">El número real es demasiado alto</text>
-		<text id="msg.err.realnumber.low" h="2A96B6D3">El número real es muy bajo</text>
-		<text id="msg.err.outlinetitle.missing" h="DDDF0A13">Falta el título del esquema</text>
-		<text id="msg.err.dictsize" h="A051CB86">El tamaño del diccionario es más de 4095</text>
-		<text id="msg.err.filespecification" h="E67D7D14">El documento contiene la especificación del archivo</text>
-		<text id="msg.warn.image.reencoded" h="E4131E9E">Se han recodificado los datos de la imagen</text>
+		<text id="msg.err.xfa" h="7CB7EB6A">No es posible la conversión, pues el documento contiene un formulario XFA</text>
+		<text id="msg.fix.added.structure.type" h="E9F53E2A">Se ha añadido el tipo que faltaba a los elementos de estructura</text>
+		<text id="msg.fix.added_layer_to_ocgs" h="384350C4">Se ha añadido una capa a la lista de capas del documento</text>
 		<text id="msg.fix.added_mark_info" h="6603ECE2">Se ha añadido 'MarkInfo' al catálogo del documento</text>
 		<text id="msg.fix.annot" h="A3ED2923">Preparada la anotación para la norma PDF/A</text>
 		<text id="msg.fix.annotPDFX" h="5675C2EF">Preparada la anotación para PDF/X</text>
@@ -107,16 +112,18 @@
 		<text id="msg.fix.flatten_transparency" h="1A34D6C7">Transparencia fusionada</text>
 		<text id="msg.fix.font" h="D72B5D39">Se reparó la tipografía %1: %2</text>
 		<text id="msg.fix.font_rasterized" h="F886ED6D">Los objetos de texto con tipografía %1 se han digitalizado como imágenes</text>
+		<text id="msg.fix.implementlimit" h="6EA088D2">Reparar los valores para cumplir con los límites de la implementación PDF/A</text>
 		<text id="msg.fix.insert_correct_parent_outline_item_key" h="0EAAA35B">Inserta la clave madre correcta al elemento de recuadrado</text>
 		<text id="msg.fix.insert_parent_outline_item_key" h="345CBC49">Inserta la clave madre al elemento de recuadrado</text>
-		<text id="msg.fix.pages_parent" h="CB575218">Se ha reparado el elemento padre de la página</text>
 		<text id="msg.fix.io.set" h="F9298C4C">Se ha ajustado a %1 el objetivo de salida</text>
 		<text id="msg.fix.pages.root" h="A1647A90">Se ha reparado la raíz del árbol de páginas del documento</text>
+		<text id="msg.fix.pages_parent" h="CB575218">Se ha reparado el elemento padre de la página</text>
 		<text id="msg.fix.rasterize.invalid.form" h="D899922D">Un formulario no válido se ha digitalizado como imágenes</text>
 		<text id="msg.fix.recompress_image_to_target_BPC" h="FF073DE9">Recomprime la imagen a %1 bits por componentes</text>
 		<text id="msg.fix.recompress_jpeg2000" h="99C21C1F">Recomprimir la imagen JPEG2000</text>
 		<text id="msg.fix.remove.alternate_presentations" h="504508D7">Se han retirado del documento las presentaciones alternativas</text>
 		<text id="msg.fix.remove.embedded.files" h="26C6032E">Retirar los archivos incrustados en el documento</text>
+		<text id="msg.fix.remove.invalid.ge" h="1ADE8289">Retirar un elemento gráfico no válido</text>
 		<text id="msg.fix.remove_JS" h="60C345B8">Se han retirado los JavaScripts</text>
 		<text id="msg.fix.remove_TR" h="E292DCE2">Se ha eliminado la curva de transferencia</text>
 		<text id="msg.fix.remove_annot" h="6BD2280C">Retirar la anotación prohibida</text>
@@ -129,7 +136,6 @@
 		<text id="msg.fix.remove_key" h="4413CC72">Se ha retirado %1</text>
 		<text id="msg.fix.remove_scale_factor" h="143311F1">Se ha eliminado el factor de escala</text>
 		<text id="msg.fix.remove_transparency" h="7E5AEEAE">Se ha retirado la transparencia</text>
-		<text id="msg.fix.remove.invalid.ge" h="1ADE8289">Retirar un elemento gráfico no válido</text>
 		<text id="msg.fix.set_PDFA_version_conformance" h="AB0F972F">Definir la versión y la conformidad con PDF/A</text>
 		<text id="msg.fix.set_PDFX_version" h="7AA4188B">Definir la versión PDF/X como %1</text>
 		<text id="msg.fix.set_egs_key_to" h="63221188">Estado de gráficos ampliado: la clave %1 se establece en %2</text>
@@ -139,7 +145,6 @@
 		<text id="msg.fix.settitle.unk" h="63847E95">Se ha establecido el título del documento: %1</text>
 		<text id="msg.fix.synch_docinfo_metadata" h="725D19C7">Se ha sincronizado la entrada %1 entre la información del documento y los metadatos XMP</text>
 		<text id="msg.fix.trapped" h="A5390027">La etiqueta interceptada se ha establecido como %1</text>
-		<text id="msg.fix.added_layer_to_ocgs" h="384350C4">Se ha añadido una capa a la lista de capas del documento</text>
 		<text id="msg.param.PSForm" h="33125BC8">Formulario Postscript</text>
 		<text id="msg.param.created_CIDSet" h="68DA0CCF">Se ha creado una entrada CIDSet según</text>
 		<text id="msg.param.created_CIDToGID" h="36E9144C">Se ha creado una entrada CIDToGIDMap en la tipografía TrueType(CID)</text>
@@ -152,7 +157,7 @@
 		<text id="msg.param.font_create_CIDToGID" h="141C53C9">Se crea una entrada 'CIDToGIDMap' en la tipografía TrueType(CID) según la norma PDF/A</text>
 		<text id="msg.param.font_create_charset" h="9936EE1E">Se crea una entrada de juego de caracteres según la norma PDF/A</text>
 		<text id="msg.param.font_embed" h="9A6990DE">incrusta el archivo de tipografía</text>
-		<text id="msg.param.font_fix_lenghts" h="30C5F865">Hay entradas fijas de longitud 1, 2 y 3 en el flujo de datos del archivo tipográfico</text>
+		<text id="msg.param.font_fix_lenghts" h="30C5F865">Se han reparado las entradas de longitud 1, 2 y 3 en el flujo de datos del archivo tipográfico</text>
 		<text id="msg.param.font_fix_width" h="034ED3BC">Repara la información de anchura del glifo</text>
 		<text id="msg.param.font_incomp_CIDSet" h="9548B2AE">Conjunto CID incompleto en subconjunto tipográfico CID</text>
 		<text id="msg.param.font_incomp_charset" h="DFFF9082">juego de caracteres incompleto en subconjunto tipográfico</text>
@@ -193,28 +198,32 @@
 		<text id="msg.param.transparent_smask_image" h="0B94C935">la imagen contiene un valor de máscara suave distinto de 'Ninguno'</text>
 		<text id="msg.param.transparent_trgroup" h="60E2ACCB">se usa un grupo de transparencia</text>
 		<text id="msg.warn.annot.is.RGB" h="BBEA0231">La anotación usa color RGB, mientras que el intento de salida no es RGB. Por ello, el valor de la parte PDF/A se ha aumentado a 2.</text>
+		<text id="msg.warn.annotofnotallowed" h="A0849C13">La página contiene una anotación prohibida en PDF/A-1. EL valor de la parte PDF/A part se aumentará a 2</text>
+		<text id="msg.warn.dictsize" h="9B24E799">El tamaño del diccionario es más de 4095. Valor de PDF/Una parte se aumenta a 2</text>
 		<text id="msg.warn.doc_has_embeddedfiles" h="E84C59BF">El documento contiene archivos incrustado. El valor de la parte PDF/A se ha aumentado a 2.</text>
 		<text id="msg.warn.doc_has_layers" h="83853EB9">El documento contiene capas. El valor de la parte PDF/A se ha aumentado a 2.</text>
 		<text id="msg.warn.doc_has_notpdf" h="A4A335D0">El documento contiene archivos incrustados que no son documentos PDF. El valor de la parte PDF/A se ha aumentado a 3.</text>
 		<text id="msg.warn.doc_has_transparent" h="7DA0DFA8">El documento contiene objetos transparentes. El valor de la parte PDF/A se ha aumentado a 2.</text>
 		<text id="msg.warn.doc_not_marked" h="C9BEF804">El documento no está marcado. El nivel de conformidad se ha reducido a B</text>
+		<text id="msg.warn.font_map_PUA" h="E60C7194">El texto está asignado al área de uso privado de Unicode y no hay actualmente ninguna etiqueta de texto. El nivel de conformidad se ha reducido a B.</text>
 		<text id="msg.warn.font_not_map_Unicode" h="E326DC30">El texto no se puede convertir en Unicode. El nivel de conformidad se ha reducido a B.</text>
-		<text id="msg.warn.st_root_elem_type_not_standard" h="D150764F">PDF estructurado: el elemento no usa un tipo normal. El nivel de conformidad se ha reducido a B.</text>
-		<text id="msg.warn.dictsize" h="9B24E799">El tamaño del diccionario es más de 4095. Valor de PDF/Una parte se aumenta a 2</text>
+		<text id="msg.warn.image.reencoded" h="E4131E9E">Se han recodificado los datos de la imagen</text>
 		<text id="msg.warn.realvaluerange" h="410D6B7D">El valor real está fuera del rango. Valor de PDF/Una parte se aumenta a 2</text>
+		<text id="msg.warn.st_root_elem_type_not_standard" h="D150764F">PDF estructurado: el elemento no usa un tipo normal. El nivel de conformidad se ha reducido a B.</text>
 		<text id="opt.report" h="2D42B915">Informe</text>
 		<text id="opt.showreport" h="672E47E9">Mostrar un informe:</text>
+		<text id="rasterize.error.chk" h="4433EF91">Trazar como dibujo las tipografías no incrustadas</text>
 		<text id="removeannots.chk" h="6BD67279">Eliminar anotaciones (formularios, enlaces, etc.)</text>
 		<text id="report.noshow" h="2B0D94AA">Nunca</text>
 		<text id="report.show.always" h="E8FA61CB">Siempre</text>
 		<text id="report.show.errwarn" h="2DCF92BE">Cuando haya error o aviso</text>
 		<text id="status.proc.cnvPage" h="92A4E6A3">Se está convirtiendo la página %1...</text>
-		<text id="status.proc.tools.cnvPage" h="60077237">%2: se está convirtiendo la página %1...</text>
 		<text id="status.proc.converting" h="9CE2B7EC">Se está convirtiendo el documento a PDF/A</text>
 		<text id="status.proc.convertingPage" h="C25CC6CC">Se está convirtiendo la página %1 a PDF/A</text>
 		<text id="status.proc.convertingX" h="CD65583F">Se está convirtiendo el documento...</text>
-		<text id="status.proc.saving" h="3D2A3BDC">Se está guardando el documento</text>
 		<text id="status.proc.gatherfont" h="C8B76D87">Recopilando información tipográfica...</text>
+		<text id="status.proc.saving" h="3D2A3BDC">Se está guardando el documento</text>
+		<text id="status.proc.tools.cnvPage" h="60077237">%2: se está convirtiendo la página %1...</text>
 		<text id="status.res.fail" h="79501FE7">Ha fallado la conversión</text>
 		<text id="status.res.success" h="C25438FB">La conversión es correcta</text>
 	</Strings>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180627200921">2.00.00</Version>
+	<Version date="20230628235839">2.00.00</Version>
 	<Author></Author>
 	<Copyright></Copyright>
 	<Product id="PDFXEditor"/>
 	<Language eName="Ukrainian (Ukraine)" lName="Українська" code="uk-UA" R2L="false"/>
-	<Module name="PDFAConverter" namespace="pdfa" version="7.0.325.10"/>
+	<Module name="PDFAConverter" namespace="pdfa" version="10.0.1.371"/>
 	<Strings>
 		<text id="auto.pdfa.level" h="778FAC3D">Автоматичний підбір версії PDF/A</text>
 		<text id="conv.name" h="7A00CE23">PDF/A (*.pdf)</text>
@@ -24,9 +24,12 @@
 		<text id="dlg.rep.fixes" h="594F7931">Виправлено (%1):</text>
 		<text id="dlg.rep.title" h="1DC94CC7">Звіт про перетворення</text>
 		<text id="dlg.rep.warnings" h="6F8DAB37">Попередження (%1):</text>
+		<text id="dlg.rep.noerr" h="B62E288E">Помилок нема</text>
+		<text id="dlg.rep.nowarn" h="9B75A61A">Попереджень нема</text>
+		<text id="dlg.rep.nofix" h="CFBD7286">Виправлень нема</text>
 		<text id="lbl.chooseStd" h="4CB6AFEB">Вибрати стандарт:</text>
-		<text id="rasterize.error.chk" h="4433EF91">Раструвати невбудовані шрифти</text>
 		<text id="msg.err.alternate_presenatations" h="19A17FF2">Документ містить альтернативні зображення</text>
+		<text id="msg.err.dictsize" h="A051CB86">Розмір словника більший 4095</text>
 		<text id="msg.err.embed_file_missing_key" h="B12243CC">Вкладений файл: ключ %1 відсутній</text>
 		<text id="msg.err.embed_file_no_AF" h="0D075E68">Вкладений файл не містить елемента 'AF'</text>
 		<text id="msg.err.embed_file_no_AFRelationship" h="0F2FF281">Вкладений файл не містить елемента  'AFRelationship'</text>
@@ -34,8 +37,9 @@
 		<text id="msg.err.embed_file_no_ModDate" h="32393EC5">Вкладений файл не містить елемента 'ModeDate'</text>
 		<text id="msg.err.embed_file_not_PDF" h="ACB6C0B4">Формат деяких вкладених файлів не PDF</text>
 		<text id="msg.err.embed_file_not_PDFA_compliance" h="69851F66">Щонайменше один вкладений PDF документ не є PDF/A сумісний</text>
+		<text id="msg.err.filespecification" h="E67D7D14">Документ містить специфікацію</text>
 		<text id="msg.err.font" h="E728DE31">Шрифт %1 неправильний: %2</text>
-		<text id="msg.err.invalidfontobject" h="D0411546">Об'єкт шрифту неправильний</text>
+		<text id="msg.err.font_map_PUA" h="B32874EF">Текст містить символи з Unicode Private Use Area та не має тегу Фактичний текст</text>
 		<text id="msg.err.halftone_has_name" h="044A925B">Розширений графічний стан:  Halftone задано іменем</text>
 		<text id="msg.err.image_bpc_more" h="63802D36">Біт на компоненту для зображення більше %1</text>
 		<text id="msg.err.impl_limit_obj_size_more" h="3A9756F7">розмір об’єкта %1 більший %2</text>
@@ -49,17 +53,22 @@
 		<text id="msg.err.invalid.xform" h="735966B8">Документ містить некоректну XForm</text>
 		<text id="msg.err.invalid_image" h="A275C999">Зображення недійсне</text>
 		<text id="msg.err.invalid_pattern" h="ADB9EF31">Шаблон неправильний</text>
+		<text id="msg.err.invalidfontobject" h="D0411546">Об'єкт шрифту неправильний</text>
 		<text id="msg.err.keys_not_UR3_DocMDP" h="33EEDCA6">Ключі, відмінні від 'UR3' чи 'DocMDP', використані в дозволі</text>
+		<text id="msg.err.layer_is_not_ocgs" h="192BDC6C">Шар не знаходиться в списку шарів документа</text>
 		<text id="msg.err.mbox.missing" h="529404DB">'MediaBox' відсутній</text>
 		<text id="msg.err.metadata_missing" h="52FA2A56">Метадані порожні</text>
 		<text id="msg.err.obj_validator_name_not_UTF8" h="FB949014">Некоректна UTF-8 стрічка в імені</text>
+		<text id="msg.err.outlinetitle.missing" h="DDDF0A13">Заголовок відсутній</text>
 		<text id="msg.err.pageseparated" h="04FDB927">Сторінка є шаром одного кольору при кольороподілі</text>
 		<text id="msg.err.preliminary.modify" h="413E0B86">Модифікація документа заборонена</text>
 		<text id="msg.err.preliminary.secured" h="1CA464FB">Документ захищений</text>
 		<text id="msg.err.preliminary.xfa" h="1B4F1FD1">Документ, який містить форму XFA, не може бути збереженим в PDF/A</text>
-		<text id="msg.err.root.invalid.key" h="AB4A8812">Кореневий об’єкт містить недійсний ключ</text>
-		<text id="msg.err.xfa" h="7CB7EB6A">Перетворення неможливе: документ містить XFA форму</text>
 		<text id="msg.err.pressteps" h="1CBEE75B">Сторінка містить 'PresSteps'</text>
+		<text id="msg.err.realnumber.high" h="66E0E3DB">Дійсне число завелике</text>
+		<text id="msg.err.realnumber.low" h="2A96B6D3">Дійсне число замале</text>
+		<text id="msg.err.root.invalid.key" h="AB4A8812">Кореневий об’єкт містить недійсний ключ</text>
+		<text id="msg.err.shouldbeEF" h="56220803">Файл, що відповідає вимогам PDF/A-4f, повинен містити ключ EmbeddedFiles у словнику імен</text>
 		<text id="msg.err.st_root_elem_type_not_standard" h="F26BDE8C">Cтруктурований PDF: елемент нестандартного типу</text>
 		<text id="msg.err.st_root_missing" h="7F7D9806">'Struct TreeRoot' відсутнє</text>
 		<text id="msg.err.substitute_filter" h="50898016">%1 замінено на %2</text>
@@ -74,13 +83,9 @@
 		<text id="msg.err.used_key" h="48336238">%1 ключ застосовується</text>
 		<text id="msg.err.used_obj_transparency" h="A7E6E8BD">Об’єкт є прозорим: %1</text>
 		<text id="msg.err.used_scale_factor" h="341357C0">Масштабування (UserUnit) використовується</text>
-		<text id="msg.err.layer_is_not_ocgs" h="192BDC6C">Шар не знаходиться в списку шарів документа</text>
-		<text id="msg.err.realnumber.high" h="66E0E3DB">Дійсне число завелике</text>
-		<text id="msg.err.realnumber.low" h="2A96B6D3">Дійсне число замале</text>
-		<text id="msg.err.outlinetitle.missing" h="DDDF0A13">Заголовок відсутній</text>
-		<text id="msg.err.dictsize" h="A051CB86">Розмір словника більший 4095</text>
-		<text id="msg.err.filespecification" h="E67D7D14">Документ містить специфікацію</text>
-		<text id="msg.warn.image.reencoded" h="E4131E9E">Дані зображення були перекодовані</text>
+		<text id="msg.err.xfa" h="7CB7EB6A">Перетворення неможливе: документ містить XFA форму</text>
+		<text id="msg.fix.added.structure.type" h="E9F53E2A">Додано відсутній тип до структури елементів</text>
+		<text id="msg.fix.added_layer_to_ocgs" h="384350C4">Додано шар до списку шарів документа</text>
 		<text id="msg.fix.added_mark_info" h="6603ECE2">Додано 'MarkInfo' в каталог документа</text>
 		<text id="msg.fix.annot" h="A3ED2923">Підготовлена анотація для PDF/A стандарту</text>
 		<text id="msg.fix.annotPDFX" h="5675C2EF">Підготовлена анотація для PDF/Х</text>
@@ -107,16 +112,18 @@
 		<text id="msg.fix.flatten_transparency" h="1A34D6C7">Об’єднання прозорості</text>
 		<text id="msg.fix.font" h="D72B5D39">Шрифт %1 замінено на %2</text>
 		<text id="msg.fix.font_rasterized" h="F886ED6D">Текст зі шрифтом %1 растеризовано</text>
+		<text id="msg.fix.implementlimit" h="6EA088D2">Виправте значення, щоб відповідати обмеженням реалізації PDF/A</text>
 		<text id="msg.fix.insert_correct_parent_outline_item_key" h="0EAAA35B">Виправлений елемент Рarent для закладки</text>
 		<text id="msg.fix.insert_parent_outline_item_key" h="345CBC49">Виправлений елемент Рarent для закладки</text>
-		<text id="msg.fix.pages_parent" h="CB575218">Виправлено посилання на вищий елемент сторінки</text>
 		<text id="msg.fix.io.set" h="F9298C4C">Цільовий виставлено як %1</text>
 		<text id="msg.fix.pages.root" h="A1647A90">Виправлено структуру дерева сторінок</text>
+		<text id="msg.fix.pages_parent" h="CB575218">Виправлено посилання на вищий елемент сторінки</text>
 		<text id="msg.fix.rasterize.invalid.form" h="D899922D">Некоректна форма була растеризована</text>
 		<text id="msg.fix.recompress_image_to_target_BPC" h="FF073DE9">Зображення перетворено в %1 біт на компоненту</text>
 		<text id="msg.fix.recompress_jpeg2000" h="99C21C1F">JPEG 2000 зображення перекодовано</text>
 		<text id="msg.fix.remove.alternate_presentations" h="504508D7">Виделено альтернативні зображення з документа</text>
 		<text id="msg.fix.remove.embedded.files" h="26C6032E">Видалити із документа вбудовані шрифти</text>
+		<text id="msg.fix.remove.invalid.ge" h="1ADE8289">Видалено неправильне зображення</text>
 		<text id="msg.fix.remove_JS" h="60C345B8">JavaScripts видалено</text>
 		<text id="msg.fix.remove_TR" h="E292DCE2">Крива трансформації видалена</text>
 		<text id="msg.fix.remove_annot" h="6BD2280C">Видалено несумісну анотацію</text>
@@ -129,7 +136,6 @@
 		<text id="msg.fix.remove_key" h="4413CC72">%1 видалено</text>
 		<text id="msg.fix.remove_scale_factor" h="143311F1">Масштабування (UserUnit) відсутнє</text>
 		<text id="msg.fix.remove_transparency" h="7E5AEEAE">Прозорість видалено</text>
-		<text id="msg.fix.remove.invalid.ge" h="1ADE8289">Видалено неправильне зображення</text>
 		<text id="msg.fix.set_PDFA_version_conformance" h="AB0F972F">Задати PDF/A версію і рівень відповідності</text>
 		<text id="msg.fix.set_PDFX_version" h="7AA4188B">Задати PDF/A версію як %1</text>
 		<text id="msg.fix.set_egs_key_to" h="63221188">Розширений графічний стан: ключ %1 встановлено в %2</text>
@@ -139,7 +145,6 @@
 		<text id="msg.fix.settitle.unk" h="63847E95">Задати заголовок документа як %1</text>
 		<text id="msg.fix.synch_docinfo_metadata" h="725D19C7">%1 входження синхронізовано між Інформацією про документ (Document Info) і XMP метаданими (XMP Metadata)</text>
 		<text id="msg.fix.trapped" h="A5390027">Перекривання кольорів виставлене як %1</text>
-		<text id="msg.fix.added_layer_to_ocgs" h="384350C4">Додано шар до </text>
 		<text id="msg.param.PSForm" h="33125BC8">Postsript форма</text>
 		<text id="msg.param.created_CIDSet" h="68DA0CCF">створенний CIDSet відповідно</text>
 		<text id="msg.param.created_CIDToGID" h="36E9144C">створенний CIDToGIDMap в шрифті TrueType(CID)</text>
@@ -193,28 +198,32 @@
 		<text id="msg.param.transparent_smask_image" h="0B94C935">зображення містить Soft Mask зі значенням, відмінним від  'Без значення'</text>
 		<text id="msg.param.transparent_trgroup" h="60E2ACCB">Задано transparency group</text>
 		<text id="msg.warn.annot.is.RGB" h="BBEA0231">В аннотації використано RGB колір, хоча цільовий не RGB. Значення версії PDF/A задано 2.</text>
+		<text id="msg.warn.annotofnotallowed" h="A0849C13">Сторінка містить анотації, які заборонені в PDF/A-1. Величину частини PDF/A збільшено до 2</text>
+		<text id="msg.warn.dictsize" h="9B24E799">Розмір словника більший 4095. Значення версії PDF/A встановлено як  2</text>
 		<text id="msg.warn.doc_has_embeddedfiles" h="E84C59BF">Документ містить вкладені файли. Значення версії PDF/A встановлено як  2</text>
 		<text id="msg.warn.doc_has_layers" h="83853EB9">Документ містить шари. Значення версії PDF/A встановлено як  2</text>
 		<text id="msg.warn.doc_has_notpdf" h="A4A335D0">Документ містить вкладені не-PDF файли. Значення версії PDF/A встановлено як 3</text>
 		<text id="msg.warn.doc_has_transparent" h="7DA0DFA8">Документ прозорі об’єкти. Значення версії PDF/A встановлено як  2</text>
 		<text id="msg.warn.doc_not_marked" h="C9BEF804">Документ не промаркований. Рівень відповідності понижено до В.</text>
+		<text id="msg.warn.font_map_PUA" h="E60C7194">Текст містить символи з Unicode Private Use Area та не має тегу Фактичний текст. Рівень відповідності понижено до В.</text>
 		<text id="msg.warn.font_not_map_Unicode" h="E326DC30">Текст не може бути перетвореним в Unicode. Рівень відповідності понижено до В.</text>
-		<text id="msg.warn.st_root_elem_type_not_standard" h="D150764F">Cтруктурований PDF: елемент нестандартного типу. Рівень відповідності понижено до В.</text>
-		<text id="msg.warn.dictsize" h="9B24E799">Розмір словника більший 4095. Значення версії PDF/A встановлено як  2</text>
+		<text id="msg.warn.image.reencoded" h="E4131E9E">Дані зображення були перекодовані</text>
 		<text id="msg.warn.realvaluerange" h="410D6B7D">Дійсне значення виходить за межі допустимого діапазону. Значення версії PDF/A встановлено як  2</text>
+		<text id="msg.warn.st_root_elem_type_not_standard" h="D150764F">Cтруктурований PDF: елемент нестандартного типу. Рівень відповідності понижено до В.</text>
 		<text id="opt.report" h="2D42B915">Параметри звіту</text>
 		<text id="opt.showreport" h="672E47E9">Показати звіт:</text>
+		<text id="rasterize.error.chk" h="4433EF91">Раструвати невбудовані шрифти</text>
 		<text id="removeannots.chk" h="6BD67279">Видалити анотації (форми, посилання, ін.)</text>
 		<text id="report.noshow" h="2B0D94AA">Ніколи</text>
 		<text id="report.show.always" h="E8FA61CB">Завжди</text>
 		<text id="report.show.errwarn" h="2DCF92BE">Якщо є помилки чи попередження</text>
 		<text id="status.proc.cnvPage" h="92A4E6A3">Перетворення сторінки %1...</text>
-		<text id="status.proc.tools.cnvPage" h="60077237">%2: Перетворення сторінки %1...</text>
 		<text id="status.proc.converting" h="9CE2B7EC">Перетворення в PDF/A</text>
 		<text id="status.proc.convertingPage" h="C25CC6CC">Перетворення сторінки %1 в PDF/A</text>
 		<text id="status.proc.convertingX" h="CD65583F">Перетворення документа...</text>
-		<text id="status.proc.saving" h="3D2A3BDC">Збереження документа</text>
 		<text id="status.proc.gatherfont" h="C8B76D87">Збір інформації про шрифти...</text>
+		<text id="status.proc.saving" h="3D2A3BDC">Збереження документа</text>
+		<text id="status.proc.tools.cnvPage" h="60077237">%2: Перетворення сторінки %1...</text>
 		<text id="status.res.fail" h="79501FE7">Перетворення не відбулося</text>
 		<text id="status.res.success" h="C25438FB">Перетворення успішно завершено</text>
 	</Strings>

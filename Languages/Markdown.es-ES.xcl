@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123222427">2.00.00</Version>
+	<Version date="20230606192531">2.00.00</Version>
 	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXEditor"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="español" code="es-ES" R2L="false"/>
-	<Module name="MarkdownPlugin" namespace="md" version="7.0.323.3"/>
+	<Module name="MarkdownPlugin" namespace="md" version="10.0.0.0"/>
 	<Strings>
-		<text id="btn.md.submenu" h="89D1502A">Desde %Markdown</text>
+		<text id="btn.md.submenu" h="89D1502A">Desde &amp;Markdown...</text>
 		<text id="cmd.tip" h="117085B4">Crea un documento nuevo a partir de archivos Markdown.</text>
 		<text id="converter.desc" h="41356938">Convierte archivos Markdown</text>
 		<text id="converter.filterName" h="AE86B691">Archivos Markdown</text>

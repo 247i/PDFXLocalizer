@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20171117220838">2.00.00</Version>
+	<Version date="20190812212453">2.00.00</Version>
 	<Author>LARAMJO y Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="PDFXEditor"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="español" code="es-ES" R2L="false"/>
-	<Module name="SpellChecker" namespace="spell" version="6.0.322.7"/>
+	<Module name="SpellChecker" namespace="spell" version="8.0.332.0"/>
 	<Strings>
 		<text id="dict.param.hyphen" h="50549BEC">separación con guiones</text>
 		<text id="dict.param.spell" h="E10DA1DD">revisión</text>
@@ -21,6 +21,7 @@
 		<text id="opt.b.AddDict" h="E0BF5FDE">Agregar un diccionario</text>
 		<text id="opt.b.CustomWordList" h="D1505337">Lista personal palabras</text>
 		<text id="opt.b.RemoveDict" h="D94F3439">Eliminar diccionario</text>
+		<text id="opt.b.Updater" h="4A49FCF0">Añadir o actualizar idiomas</text>
 		<text id="opt.cb.AllowAlgoHyphens" h="D8C41308">Permitir en palabras desconocidas</text>
 		<text id="opt.cb.EnableAllHyphens" h="207464CF">Permitir la separación con guiones entre sílabas</text>
 		<text id="opt.cb.EnableHyphens" h="71ECEEC4">Utilizar el diccionario para la separación</text>

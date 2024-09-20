@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Localization>
-	<Version date="20180123215335">2.00.00</Version>
+	<Version date="20210423005506">2.00.00</Version>
 	<Author>Angel Herráez</Author>
 	<Copyright></Copyright>
 	<Product id="XCShellExt"/>
 	<Language eName="Spanish (Spain, Traditional Sort)" lName="Español" code="es-ES" R2L="false"/>
-	<Module name="XCShellExt" namespace="" version="7.0.323.3"/>
+	<Module name="XCShellExt" namespace="" version="9.0.354.0"/>
 	<Strings>
 		<text id="title" h="930D3835">Título:</text>
 		<text id="subject" h="A59102F6">Asunto:</text>
@@ -24,8 +24,7 @@
 		<text id="pdfVersion" h="4C06CDA5">Versión de PDF</text>
 		<text id="pdfVersion2" h="52D57621">Versión de PDF:</text>
 		<text id="pdfVersion.description" h="3087428D">Versión de la norma PDF</text>
-		<text id="infoTip.pages" h="145D976C">Páginas: %d página(s)
-		</text>
+		<text id="infoTip.pages" h="1DAA7ADE">Páginas: %d página(s)</text>
 		<text id="zoomMode.actualSize" h="5E4611C5">Tamaño real</text>
 		<text id="zoomMode.fitPage" h="E07FD6B2">Ajustar a página</text>
 		<text id="zoomMode.fitWidth" h="0AB6EA6C">Ajustar el ancho</text>
@@ -57,6 +56,7 @@
 		<text id="pageExtraction" h="4511684F">Extracción de páginas:</text>
 		<text id="signing" h="D103863D">Firma:</text>
 		<text id="xcPropSheetCaption" h="E96E93B9">Información del PDF</text>
+		<text id="passwordProtectedDoc" h="E1067212">Protegido por contraseña</text>
 		<text id="tool.hand" h="1C47D4CB">Mano</text>
 		<text id="cmd.view.goto.firstPage" h="DFC0D45F">Primera página</text>
 		<text id="cmd.view.goto.firstPage.tip" h="631EFAFD">Lleva a la primera página del documento.</text>
@@ -86,5 +86,9 @@
 		<text id="cmd.selectLanguage.tip" h="47EE650B">Elija el idioma deseado en el subenú.</text>
 		<text id="cmd.selectSysLang" h="31F4B9FA">Usar configuración regional</text>
 		<text id="cmd.selectBuildInLang" h="1C70EF34">English(US), Built-in</text>
+		<text id="cmd.view.rotate.CW" h="AF64B23B">Giro horario</text>
+		<text id="cmd.view.rotate.CW.tip" h="FCEEB2C3">Gira la vista actual en sentido horario (hacia la derecha)&lt;b&gt;&lt;i&gt;Nota:&lt;/i&gt;&lt;/b&gt; esta función gira las páginas de forma temporal, sin modificsr el documento.</text>
+		<text id="cmd.view.rotate.CCW" h="E67622B6">Giro antihorario</text>
+		<text id="cmd.view.rotate.CCW.tip" h="6F6513EE">Gira la vista actual en sentido antihorario (hacia la izquierda)&lt;b&gt;&lt;i&gt;Nota:&lt;/i&gt;&lt;/b&gt; esta función gira las páginas de forma temporal, sin modificsr el documento.</text>
 	</Strings>
 </Localization>
