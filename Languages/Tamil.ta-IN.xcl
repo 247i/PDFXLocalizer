@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Localization>
+	<Version date="20240423233857">2.00.00</Version>
+	<Author>தமிழ்நேரம்</Author>
+	<Copyright>தமிழ்நேர குழு
+https://TamilNeram.github.io</Copyright>
+	<Product id="PDFXEditor"/>
+	<Language eName="Tamil (India)" lName="தமிழ்" code="ta-IN" R2L="false"/>
+	<Module name="PDFXEditor" namespace="" version="10.3.0.386"/>
+	<Strings/>
+</Localization>
